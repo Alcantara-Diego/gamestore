@@ -1,0 +1,41 @@
+function Nav(){
+    return(
+        <nav className="w-100 p-0 d-flex flex-row align-items-end">
+            <div className="logo h-100 px-5 py-3 fw-bold">GameStore</div>
+            <div className="navContent w-100 px-3 d-flex flex-column">
+                <div className="contentFirstColumn pb-2 d-flex flex-row justify-content-between">
+                    <div className="socialMediaIcons">
+                        Nos siga em: 
+                        <button><i className="bi bi-facebook"></i></button>
+                        <button><i className="bi bi-youtube"></i></button>
+                        <button><i className="bi bi-twitter"></i></button>
+                    </div>
+
+                    <div className="aditionalInfo"><p className="idioma mb-0">Idioma: <strong>BR<i className="mx-1 bi bi-caret-down-fill"></i></strong></p></div>
+                </div>
+
+
+                <div className="contentSecondColumn d-flex flex-row justify-content-between">
+                    <ul className="navOptions d-flex flex-row mb-0">
+                        <li className="navOption">Home</li>
+                    
+                        <li className="navOption">Consoles</li>
+                    
+                        <li className="navOption">Jogos</li>
+                    </ul>
+
+                    <ul className="d-flex flex-row mb-0">
+                        <li>Carrinho<i className="bi bi-cart2"></i></li>
+                        <li>Conta<i className="bi bi-person"></i></li>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            
+        </nav>
+    )
+}
+
+export default Nav;
