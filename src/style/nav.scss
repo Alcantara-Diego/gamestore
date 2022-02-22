@@ -1,0 +1,82 @@
+
+
+nav{
+    position: relative;
+    background-image: radial-gradient(#3b3b3b, #202020);
+
+}
+.logo{
+    font-size: 2.2rem;
+    background-image: linear-gradient(to bottom right,#b6a235, gold);
+    color: black;
+}
+.mobileHamburguer{
+    position: absolute;
+    bottom: 50%;
+    right: 20px;
+    transform: translateY(50%);
+
+    font-size: 2.6rem;
+    background: none;
+    border: none;
+    display: none;
+    color: white;
+}
+
+.socialMediaIcons{
+    font-size: .7rem;
+    color: white;
+
+    button{
+        border: none;
+        color: white;
+        padding: 0rem 0.2rem;
+        margin-right: 5px;
+        border-radius: 5px;
+        &:nth-of-type(1){
+            background-color: blue;
+        }
+        &:nth-of-type(2){
+            background-color: red;
+        }
+        &:nth-of-type(3){
+            background-color: blue;
+        }
+    }
+    
+
+}
+.idioma{
+    font-size: 0.75rem;
+    color: gainsboro;
+    strong{
+        color: white;
+    }
+}
+.contentSecondColumn{
+    display: flex;
+}
+.contentSecondColumn ul{
+    list-style: none;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+.contentSecondColumn ul li{
+    margin-right: 15px;
+    transition: .200s;
+    &:hover{
+        color: gold;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .mobileHamburguer{
+        display: block!important;
+    }
+
+    .contentSecondColumn{
+        display: none;
+    }
+}

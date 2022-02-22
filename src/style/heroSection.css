@@ -1,0 +1,59 @@
+main {
+  width: 100%;
+  height: 90vh;
+  background-image: url(../assets/heroSpiderman.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .heroSectionContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.397);
+}
+
+main .heroSectionContent .buyItemHeroSection button {
+  font-size: 2rem;
+  border-radius: 15px;
+  font-weight: bold;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#b6a235), to(gold));
+  background-image: linear-gradient(to bottom right, #b6a235, gold);
+}
+
+main .heroSectionContent .navigateBetweenSectionCards {
+  color: white;
+  margin-bottom: 20px;
+}
+
+main .heroSectionContent .navigateBetweenSectionCards .card {
+  text-align: center;
+  font-weight: bold;
+  width: 190px;
+  font-size: 1.7rem;
+  margin-right: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid gray;
+  background-color: rgba(0, 0, 0, 0.637);
+  -webkit-transition: .350s;
+  transition: .350s;
+  cursor: pointer;
+}
+
+main .heroSectionContent .navigateBetweenSectionCards .card i {
+  -webkit-transition: .100s;
+  transition: .100s;
+  font-size: 3.5rem;
+}
+
+main .heroSectionContent .navigateBetweenSectionCards .card:hover {
+  color: gold;
+  border: 2px solid gold;
+}
+/*# sourceMappingURL=heroSection.css.map */

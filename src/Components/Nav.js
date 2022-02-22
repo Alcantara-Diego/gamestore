@@ -2,7 +2,14 @@ function Nav(){
     return(
         <nav className="w-100 p-0 d-flex flex-row align-items-end">
             <div className="logo h-100 px-5 py-3 fw-bold">GameStore</div>
+
+            {/* Hamburguer on mobile screens */}
+            <button className="mobileHamburguer"><i className="bi bi-list"></i></button>
+
+            {/* Nav options */}
             <div className="navContent w-100 px-3 d-flex flex-column">
+
+                {/* Options os first line */}
                 <div className="contentFirstColumn pb-2 d-flex flex-row justify-content-between">
                     <div className="socialMediaIcons">
                         Nos siga em: 
@@ -14,8 +21,8 @@ function Nav(){
                     <div className="aditionalInfo"><p className="idioma mb-0">Idioma: <strong>BR<i className="mx-1 bi bi-caret-down-fill"></i></strong></p></div>
                 </div>
 
-
-                <div className="contentSecondColumn d-flex flex-row justify-content-between">
+                {/* Options on second line */}
+                <div className="contentSecondColumn flex-row justify-content-between">
                     <ul className="navOptions d-flex flex-row mb-0">
                         <li className="navOption">Home</li>
                     

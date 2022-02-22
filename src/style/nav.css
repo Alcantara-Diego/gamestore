@@ -1,0 +1,92 @@
+nav {
+  position: relative;
+  background-image: radial-gradient(#3b3b3b, #202020);
+}
+
+.logo {
+  font-size: 2.2rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#b6a235), to(gold));
+  background-image: linear-gradient(to bottom right, #b6a235, gold);
+  color: black;
+}
+
+.mobileHamburguer {
+  position: absolute;
+  bottom: 50%;
+  right: 20px;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  font-size: 2.6rem;
+  background: none;
+  border: none;
+  display: none;
+  color: white;
+}
+
+.socialMediaIcons {
+  font-size: .7rem;
+  color: white;
+}
+
+.socialMediaIcons button {
+  border: none;
+  color: white;
+  padding: 0rem 0.2rem;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.socialMediaIcons button:nth-of-type(1) {
+  background-color: blue;
+}
+
+.socialMediaIcons button:nth-of-type(2) {
+  background-color: red;
+}
+
+.socialMediaIcons button:nth-of-type(3) {
+  background-color: blue;
+}
+
+.idioma {
+  font-size: 0.75rem;
+  color: gainsboro;
+}
+
+.idioma strong {
+  color: white;
+}
+
+.contentSecondColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contentSecondColumn ul {
+  list-style: none;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.contentSecondColumn ul li {
+  margin-right: 15px;
+  -webkit-transition: .200s;
+  transition: .200s;
+}
+
+.contentSecondColumn ul li:hover {
+  color: gold;
+}
+
+@media screen and (max-width: 780px) {
+  .mobileHamburguer {
+    display: block !important;
+  }
+  .contentSecondColumn {
+    display: none;
+  }
+}
+/*# sourceMappingURL=nav.css.map */
