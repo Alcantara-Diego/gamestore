@@ -1,9 +1,163 @@
 .highlightsSection {
-  height: 50vh;
-  background-color: gray;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem 1rem;
+  gap: 10px;
+  background-image: radial-gradient(#3b3b3b, #202020);
 }
 
-.highlightsSection img {
-  width: 400px;
+.highlightsSection .highlight {
+  position: relative;
+  width: 40%;
+  height: 220px;
+  border: 0px solid #00000000;
+  overflow: hidden;
+  -webkit-transition: .300s;
+  transition: .300s;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/highlightImages/horizonHighlight.jpg);
+}
+
+.highlightsSection .highlight:hover {
+  border: 3px solid var(--mainColor);
+}
+
+.highlightsSection .highlight:nth-of-type(2) {
+  background-image: url(../assets/highlightImages/gowHighlight.jpg);
+}
+
+.highlightsSection .highlight:nth-of-type(3) {
+  background-position: center;
+  background-image: url(../assets/highlightImages/RE-Village-Highlight.jpg);
+}
+
+.highlightsSection .highlight:nth-of-type(4) {
+  background-position: center;
+  background-image: url(../assets/highlightImages/R6-Highlight.jpeg);
+}
+
+.highlightsSection .highlight .highlightActionButtons {
+  width: 100%;
+  height: calc(100% - 30px);
+  gap: 10px;
+  -webkit-transition: .600s;
+  transition: .600s;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#00000091), to(#000000b9));
+  background-image: linear-gradient(to top, #00000091, #000000b9);
+}
+
+.highlightsSection .highlight .highlightActionButtons:hover {
+  opacity: 1;
+}
+
+.highlightsSection .highlight .highlightActionButtons .itemTitle {
+  color: white;
+}
+
+.highlightsSection .highlight .highlightActionButtons .actionButton {
+  width: 300px;
+  border: 2px solid #00000000;
+  font-weight: bold;
+  -webkit-transition: .300s;
+  transition: .300s;
+  background-image: var(--mainImage);
+  border-radius: 7px;
+  color: white;
+}
+
+.highlightsSection .highlight .highlightActionButtons .actionButton:last-of-type {
+  color: black;
+  background-image: none;
+  background-color: gainsboro;
+}
+
+.highlightsSection .highlight .highlightActionButtons .actionButton:hover {
+  border: 2px solid black;
+}
+
+.highlightsSection .highlight .highlightBottomInfo {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-weight: bold;
+}
+
+.highlightsSection .highlight .highlightBottomInfo .highlightName {
+  width: 90px;
+  padding: 5px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-color: #38b3d8;
+}
+
+.highlightsSection .highlight .highlightBottomInfo .price {
+  width: 100%;
+  padding-left: 5px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.568);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 870px) {
+  .highlightsSection {
+    padding: 1.5rem .5rem;
+  }
+  .highlightsSection .highlight {
+    width: 48%;
+  }
+  .highlightsSection .highlight .actionButton {
+    width: 210px !important;
+  }
 }
 /*# sourceMappingURL=sections.css.map */

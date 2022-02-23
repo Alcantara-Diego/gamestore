@@ -3,6 +3,11 @@
 @import 'nav';
 
 
+:root{
+    --mainImage: linear-gradient(to bottom right,#b6a235, gold);
+    --mainColor: gold;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,3 +15,28 @@
 }
 
 
+.alert{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid gainsboro;
+    background-image: radial-gradient(#3b3b3b, #202020);
+    color: white;
+    z-index: 100;
+    opacity: 0;
+    animation: none;
+}
+
+@keyframes showAlert{
+    0%{
+        opacity: 0;
+    }30%{
+        opacity: 1;
+    }70%{
+        opacity: 1;
+    }100%{
+        opacity: 0;
+    }
+}

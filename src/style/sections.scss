@@ -1,8 +1,131 @@
-.highlightsSection{
-    height: 50vh;
-    background-color: gray;
 
-    img{
-        width: 400px;
+
+.highlightsSection{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3rem 1rem;
+    gap: 10px;
+    background-image: radial-gradient(#3b3b3b, #202020);
+
+    .highlight{
+        position: relative;
+        width: 40%;
+        height: 220px;
+        border: 0px solid #00000000;
+        overflow: hidden;
+        transition: .300s;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../assets/highlightImages/horizonHighlight.jpg);
+
+        &:hover{
+            border: 3px solid var(--mainColor);
+        }
+
+        &:nth-of-type(2){
+            background-image: url(../assets/highlightImages/gowHighlight.jpg);
+        }
+        &:nth-of-type(3){
+            background-position: center;
+            background-image: url(../assets/highlightImages/RE-Village-Highlight.jpg);
+        }
+        &:nth-of-type(4){
+            background-position: center;
+            background-image: url(../assets/highlightImages/R6-Highlight.jpeg);
+        }
+
+
+        .highlightActionButtons{
+            width: 100%;
+            height: calc(100% - 30px);
+            gap: 10px;
+
+            transition: .600s;
+            opacity: 0;
+            
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to top, #00000091, #000000b9);
+
+            &:hover{
+                opacity: 1;
+            }
+
+            .itemTitle{
+                color: white;
+            }
+            .actionButton{
+                width: 300px;
+                border: 2px solid #00000000;
+                font-weight: bold;
+                transition: .300s;
+                background-image: var(--mainImage);
+                border-radius: 7px;
+                color: white;
+
+                &:last-of-type{
+                    color: black;
+                    background-image: none;
+                    background-color: gainsboro;
+                }
+                &:hover{
+                    border: 2px solid black;
+                }
+            }
+        }
+
+
+        .highlightBottomInfo{
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            height: 30px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            font-weight: bold;
+
+
+            .highlightName{
+                width: 90px;
+                padding: 5px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                background-color: rgb(56, 179, 216);
+            }
+            .price{
+                width: 100%;
+                padding-left: 5px;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.568);
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 870px){
+    .highlightsSection{
+        padding: 1.5rem .5rem;
+
+        .highlight{
+            width: 48%;
+
+            .actionButton{
+                width: 210px!important;
+            }
+        }
+
     }
 }
