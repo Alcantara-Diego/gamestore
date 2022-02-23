@@ -1,5 +1,20 @@
+.section {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 3rem 2rem;
+  background-image: radial-gradient(#3b3b3b, #202020);
+}
+
+.section .sectionTitle {
+  margin: 1rem 0;
+  color: gainsboro;
+}
+
 .highlightsSection {
-  height: 70vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,18 +24,15 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 3rem 1rem;
-  gap: 10px;
-  background-image: radial-gradient(#3b3b3b, #202020);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .highlightsSection .highlight {
   position: relative;
-  width: 40%;
-  height: 220px;
+  width: 50%;
+  height: 290px;
   border: 0px solid #00000000;
   overflow: hidden;
   -webkit-transition: .300s;

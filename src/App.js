@@ -1,7 +1,7 @@
 import './style/style.css';
 import Nav from './Components/Nav'
 import HeroSection from './Components/HeroSection';
-import Highlights from './Components/Highlights';
+import FirstSection from './Components/FirstSection';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       </div>
       <Nav/>
       <HeroSection/>
-      <Highlights/>
+      <FirstSection/>
     </div>
   );
 }

@@ -1,5 +1,20 @@
+.section {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 3rem 2rem;
+  background-image: radial-gradient(#3b3b3b, #202020);
+}
+
+.section .sectionTitle {
+  margin: 1rem 0;
+  color: gainsboro;
+}
+
 .highlightsSection {
-  height: 70vh;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,18 +24,15 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 3rem 1rem;
-  gap: 10px;
-  background-image: radial-gradient(#3b3b3b, #202020);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .highlightsSection .highlight {
   position: relative;
-  width: 40%;
-  height: 220px;
+  width: 50%;
+  height: 290px;
   border: 0px solid #00000000;
   overflow: hidden;
   -webkit-transition: .300s;
@@ -371,5 +383,95 @@ nav {
   100% {
     opacity: 0;
   }
+}
+
+.cardsContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0 20px;
+}
+
+.cardsContainer .card {
+  width: 230px;
+  height: 420px;
+  margin-bottom: 1.5rem;
+  color: gainsboro;
+  background-color: #504f50;
+}
+
+.cardsContainer .card .imgContainer {
+  background-color: white;
+  height: 240px;
+}
+
+.cardsContainer .card .imgContainer img {
+  width: 100%;
+  height: 225px;
+}
+
+.cardsContainer .card .simpleCardContent {
+  height: 100%;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cardsContainer .card .simpleCardContent .itemRate {
+  font-size: 0.7rem;
+}
+
+.cardsContainer .card .simpleCardContent .itemRate i {
+  margin-left: 2px;
+}
+
+.cardsContainer .card .simpleCardContent .itemRate .bi-heart-fill {
+  color: red;
+}
+
+.cardsContainer .card .simpleCardContent .simpleCardBottomInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.cardsContainer .card .simpleCardContent .simpleCardBottomInfo .price {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.cardsContainer .card .simpleCardContent .simpleCardBottomInfo button {
+  background: none;
+  border: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
