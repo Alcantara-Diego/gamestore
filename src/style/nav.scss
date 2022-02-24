@@ -80,3 +80,13 @@ nav{
         display: none;
     }
 }
+
+@media screen and(max-width: 500px){
+    .logo{
+        font-size: 1.6rem;
+        
+    }
+    .socialMediaIcons, .idioma{
+        display: none;
+    }
+}

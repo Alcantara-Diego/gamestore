@@ -10,20 +10,30 @@ main{
         position: absolute;
         bottom: 0;
         left: 0;
-        font-size: 2.5rem;
+        font-size: 2rem;
         text-transform: uppercase;
         color: white;
         background-color: rgba(0, 0, 0, 0.397);
 
         .buyItemHeroSection{
         
+            p{
+                text-align: center;
+            }
 
             button{
-                font-size: 2rem;
+                font-size: 1.6rem;
+                border: 2px solid #00000000;
                 border-radius: 15px;
                 font-weight: bold;
                 color: white;
+                transition: .350s;
                 background-image: linear-gradient(to bottom right,#b6a235, gold);
+
+                &:hover{
+                    color: black;
+                    border: 2px solid black;
+                }
             }
         }
 
@@ -35,8 +45,7 @@ main{
                 text-align: center;
                 font-weight: bold;
                 width: 190px;
-                font-size: 1.7rem;
-                margin-right: 20px;
+                font-size: 1.1rem;
                 padding: 10px 30px;
                 border-radius: 10px;
                 border: 2px solid gray;
@@ -46,7 +55,7 @@ main{
 
                 i{
                     transition: .100s;
-                    font-size: 3.5rem;
+                    font-size: 2.4rem;
                 }
 
                 &:hover{
@@ -56,5 +65,25 @@ main{
             }
         }
     
+    }
+}
+
+@media screen and(max-width: 500px){
+    .navigateBetweenSectionCards{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px 5px;
+    }
+
+    .buyItemHeroSection{
+        button{
+            font-size: 1.2rem!important;
+        }
+    }
+}
+
+@media screen and(max-width: 420px){
+    main{
+        background-position: left;
     }
 }

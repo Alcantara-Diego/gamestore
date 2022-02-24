@@ -33,6 +33,7 @@
   position: relative;
   width: 50%;
   height: 290px;
+  text-align: center;
   border: 0px solid #00000000;
   overflow: hidden;
   -webkit-transition: .300s;
@@ -173,6 +174,96 @@
   }
 }
 
+.cardsContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0 20px;
+}
+
+.cardsContainer .card {
+  width: 230px;
+  height: 420px;
+  margin-bottom: 1.5rem;
+  color: gainsboro;
+  background-color: #504f50;
+}
+
+.cardsContainer .card .imgContainer {
+  background-color: white;
+  height: 240px;
+}
+
+.cardsContainer .card .imgContainer img {
+  width: 100%;
+  height: 225px;
+}
+
+.cardsContainer .card .simpleCardContent {
+  height: 100%;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cardsContainer .card .simpleCardContent .itemRate {
+  font-size: 0.7rem;
+}
+
+.cardsContainer .card .simpleCardContent .itemRate i {
+  margin-left: 2px;
+}
+
+.cardsContainer .card .simpleCardContent .itemRate .bi-heart-fill {
+  color: red;
+}
+
+.cardsContainer .card .simpleCardContent .simpleCardBottomInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.cardsContainer .card .simpleCardContent .simpleCardBottomInfo .price {
+  margin-bottom: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.cardsContainer .card .simpleCardContent .simpleCardBottomInfo button {
+  background: none;
+  border: none;
+  color: white;
+}
+
 main {
   width: 100%;
   height: 90vh;
@@ -186,19 +277,31 @@ main .heroSectionContent {
   position: absolute;
   bottom: 0;
   left: 0;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: white;
   background-color: rgba(0, 0, 0, 0.397);
 }
 
+main .heroSectionContent .buyItemHeroSection p {
+  text-align: center;
+}
+
 main .heroSectionContent .buyItemHeroSection button {
-  font-size: 2rem;
+  font-size: 1.6rem;
+  border: 2px solid #00000000;
   border-radius: 15px;
   font-weight: bold;
   color: white;
+  -webkit-transition: .350s;
+  transition: .350s;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#b6a235), to(gold));
   background-image: linear-gradient(to bottom right, #b6a235, gold);
+}
+
+main .heroSectionContent .buyItemHeroSection button:hover {
+  color: black;
+  border: 2px solid black;
 }
 
 main .heroSectionContent .navigateBetweenSectionCards {
@@ -210,7 +313,7 @@ main .heroSectionContent .navigateBetweenSectionCards .card {
   text-align: center;
   font-weight: bold;
   width: 190px;
-  font-size: 1.7rem;
+  font-size: 1.1rem;
   margin-right: 20px;
   padding: 10px 30px;
   border-radius: 10px;
@@ -224,7 +327,7 @@ main .heroSectionContent .navigateBetweenSectionCards .card {
 main .heroSectionContent .navigateBetweenSectionCards .card i {
   -webkit-transition: .100s;
   transition: .100s;
-  font-size: 3.5rem;
+  font-size: 2.4rem;
 }
 
 main .heroSectionContent .navigateBetweenSectionCards .card:hover {
@@ -324,6 +427,15 @@ nav {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .logo {
+    font-size: 1.6rem;
+  }
+  .socialMediaIcons, .idioma {
+    display: none;
+  }
+}
+
 :root {
   --mainImage: linear-gradient(to bottom right,#b6a235, gold);
   --mainColor: gold;
@@ -383,95 +495,5 @@ nav {
   100% {
     opacity: 0;
   }
-}
-
-.cardsContainer {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 0 20px;
-}
-
-.cardsContainer .card {
-  width: 230px;
-  height: 420px;
-  margin-bottom: 1.5rem;
-  color: gainsboro;
-  background-color: #504f50;
-}
-
-.cardsContainer .card .imgContainer {
-  background-color: white;
-  height: 240px;
-}
-
-.cardsContainer .card .imgContainer img {
-  width: 100%;
-  height: 225px;
-}
-
-.cardsContainer .card .simpleCardContent {
-  height: 100%;
-  padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.cardsContainer .card .simpleCardContent .itemRate {
-  font-size: 0.7rem;
-}
-
-.cardsContainer .card .simpleCardContent .itemRate i {
-  margin-left: 2px;
-}
-
-.cardsContainer .card .simpleCardContent .itemRate .bi-heart-fill {
-  color: red;
-}
-
-.cardsContainer .card .simpleCardContent .simpleCardBottomInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.cardsContainer .card .simpleCardContent .simpleCardBottomInfo .price {
-  margin-bottom: 0;
-  font-weight: bold;
-  color: white;
-}
-
-.cardsContainer .card .simpleCardContent .simpleCardBottomInfo button {
-  background: none;
-  border: none;
-  color: white;
 }
 /*# sourceMappingURL=style.css.map */

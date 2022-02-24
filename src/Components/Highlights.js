@@ -15,7 +15,7 @@ function Highlights(){
             <div id="hilight1" className="highlight">
 
                 <div className="highlightActionButtons">
-                    <h1 className="itemTitle">Horizon</h1>
+                    <h1 className="itemTitle">Horizon Forbidden West</h1>
                     <button className="btn actionButton">Comprar!</button>
                     <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>
@@ -48,7 +48,7 @@ function Highlights(){
             <div id="hilight3" className="highlight">
 
                 <div className="highlightActionButtons">
-                <h1 className="itemTitle">Resident Evil</h1>
+                <h1 className="itemTitle">Resident Evil Village</h1>
                     <button className="btn actionButton">Comprar!</button>
                     <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>
@@ -64,7 +64,7 @@ function Highlights(){
             <div id="hilight4" className="highlight">
 
                 <div className="highlightActionButtons">
-                <h1 className="itemTitle">Rainbow Six</h1>
+                <h1 className="itemTitle">Rainbow Six Siege</h1>
                     <button className="btn actionButton">Comprar!</button>
                     <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>
