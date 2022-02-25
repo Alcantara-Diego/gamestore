@@ -1,7 +1,6 @@
 .section{
     height: fit-content;
     padding: 3rem 2rem;
-    background-image: radial-gradient(#3b3b3b, #202020);
 
     .sectionTitle{
         margin: 1rem 0;
@@ -9,6 +8,9 @@
     }
 }
 
+.firstSection{
+    background-image: radial-gradient(#3b3b3b, #202020);
+}
 // ---------- HIGHLIGHT SECTION -----------
 .highlightsSection{
     height: fit-content;
@@ -295,6 +297,57 @@
                 }
 
             }
+        }
+    }
+}
+
+// ---------- CONSOLES SECTION -----------
+.consolesSection{
+    background-image: radial-gradient(#292929, #504f50);
+}
+.consolesContainerGrid{
+    width: 100%;
+    gap: 2px;
+    display: grid;
+    grid-template-columns: 30% auto auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "destaque destaque item1 item2"
+        "destaque destaque item3 item4";
+        
+    .card{
+        border: 1px solid #00000000;
+        border-radius: 0;
+        background-color: #2a2a2a;
+        width: auto;
+        height: 200px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        &:first-of-type{
+            width: auto;
+            height: auto;
+            grid-area: destaque;
+            background-size: cover;
+            background-image: url(../assets/extraImages/PS5Preto.jpg);
+            
+        }
+        &:nth-of-type(2){
+            grid-area: item1;
+            background-image: url(../assets/extraImages/xboxSX.png);
+        }
+        &:nth-of-type(3){
+            grid-area: item2;
+            background-image: url(../assets/extraImages/xboxSX.png);
+        }
+        &:nth-of-type(4){
+            grid-area: item3;
+            background-image: url(../assets/extraImages/headset.png);
+        }
+        &:nth-of-type(5){
+            grid-area: item4;
+            background-image: url(../assets/extraImages/PS4Pro.png);
         }
     }
 }

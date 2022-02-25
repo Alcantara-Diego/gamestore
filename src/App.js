@@ -2,6 +2,7 @@ import './style/style.css';
 import Nav from './Components/Nav'
 import HeroSection from './Components/HeroSection';
 import FirstSection from './Components/FirstSection';
+import ConsolesSection from './Components/ConsolesSection';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Nav/>
       <HeroSection/>
       <FirstSection/>
+      <ConsolesSection/>
     </div>
   );
 }
