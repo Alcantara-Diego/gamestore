@@ -69,9 +69,6 @@
   width: 100%;
   height: calc(100% - 30px);
   gap: 10px;
-  -webkit-transition: .600s;
-  transition: .600s;
-  opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,14 +76,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .600s;
+  transition: .600s;
+  opacity: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#00000091), to(#000000b9));
   background-image: linear-gradient(to top, #00000091, #000000b9);
 }
@@ -325,6 +325,9 @@
 }
 
 .consolesSection {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-image: radial-gradient(#292929, #504f50);
 }
 
@@ -341,6 +344,7 @@
 }
 
 .consolesContainerGrid .card {
+  position: relative;
   border: 1px solid #00000000;
   border-radius: 0;
   background-color: #2a2a2a;
@@ -349,7 +353,26 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  cursor: pointer;
+  -webkit-transition: .600s;
+  transition: .600s;
+}
+
+.consolesContainerGrid .card:hover {
+  border: 1px solid gainsboro;
+}
+
+.consolesContainerGrid .card .itemTitle {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.consolesContainerGrid .card .price {
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+.consolesContainerGrid .card .actionButton {
+  width: 210px;
 }
 
 .consolesContainerGrid .card:first-of-type {
@@ -364,31 +387,174 @@
   background-image: url(../assets/extraImages/PS5Preto.jpg);
 }
 
+.consolesContainerGrid .card:first-of-type span {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 1;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.consolesContainerGrid .card:first-of-type span:before {
+  content: 'Mais vendido!';
+  position: absolute;
+  width: 150%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: red;
+  -webkit-transform: rotate(-45deg) translateY(-20px);
+          transform: rotate(-45deg) translateY(-20px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.consolesContainerGrid .card:first-of-type .itemTitle {
+  font-size: 2rem;
+}
+
+.consolesContainerGrid .card:first-of-type .actionButton {
+  width: 300px;
+}
+
 .consolesContainerGrid .card:nth-of-type(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: item1;
-  background-image: url(../assets/extraImages/xboxSX.png);
+  background-image: url(../assets/extraImages/ControlePS5.png);
 }
 
 .consolesContainerGrid .card:nth-of-type(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: item2;
-  background-image: url(../assets/extraImages/xboxSX.png);
+  background-image: url(../assets/extraImages/PS4Pro.png);
 }
 
 .consolesContainerGrid .card:nth-of-type(4) {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: item3;
-  background-image: url(../assets/extraImages/headset.png);
+  background-image: url(../assets/extraImages/xboxSX.png);
 }
 
 .consolesContainerGrid .card:nth-of-type(5) {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: item4;
-  background-image: url(../assets/extraImages/PS4Pro.png);
+  background-image: url(../assets/extraImages/headset.png);
+}
+
+.consolesContainerGrid .card .consoleContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #00000071;
+  gap: 10px;
+  -webkit-transition: .300s;
+  transition: .300s;
+  -webkit-transition: .600s;
+  transition: .600s;
+  opacity: 0;
+}
+
+.consolesContainerGrid .card .consoleContent:hover {
+  opacity: 1;
+}
+
+.consolesContainerGrid .card .consoleContent .actionButton {
+  border: 2px solid #00000000;
+  font-weight: bold;
+  -webkit-transition: .300s;
+  transition: .300s;
+  background-image: var(--mainImage);
+  border-radius: 7px;
+  color: white;
+}
+
+.consolesContainerGrid .card .consoleContent .actionButton:last-of-type {
+  color: black;
+  background-image: none;
+  background-color: gainsboro;
+}
+
+.consolesContainerGrid .card .consoleContent .actionButton:hover {
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 860px) {
+  .consolesSection {
+    height: 120vh;
+  }
+  .consolesContainerGrid {
+    -ms-grid-columns: 50% auto;
+        grid-template-columns: 50% auto;
+    -ms-grid-rows: 60% auto auto auto;
+        grid-template-rows: 60% auto auto auto;
+        grid-template-areas: "destaque destaque" "destaque destaque" "item1 item2" "item3 item4";
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .consolesSection {
+    height: 185vh;
+  }
+  .consolesContainerGrid {
+    gap: 6px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 30% (20%)[3];
+        grid-template-rows: 30% repeat(3, 20%);
+        grid-template-areas: "destaque" "item1" "item2" "item3" "item4";
+  }
+  .consolesContainerGrid .card:first-of-type .itemTitle {
+    font-size: 1.3rem;
+  }
+  .consolesContainerGrid .card:first-of-type .actionButton {
+    width: 210px;
+  }
 }
 /*# sourceMappingURL=sections.css.map */

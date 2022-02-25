@@ -4,11 +4,72 @@ function ConsolesSection(){
             <h3 className="sectionTitle">Consoles e acessórios</h3>
 
             <div className="consolesContainerGrid">
-                <div className="card"> card</div>
-                <div className="card"> card 2</div>
-                <div className="card"> card 3</div>
-                <div className="card"> card 4</div>
-                <div className="card"> card 5</div>
+                <div className="card">
+
+                    <span></span>
+                    <div className="consoleContent">
+                        
+
+                        <h1 className="itemTitle">Playstation 5</h1>
+                        <h5 className="price">R$4,999,99</h5>
+                        <button className="btn actionButton">Comprar!</button>
+                        <button className="btn actionButton">Adicionar ao carrinho
+                        <i className="bi bi-cart-fill"></i>
+                        </button>
+                    </div>
+
+                </div>
+                <div className="card"> 
+
+                    <div className="consoleContent">
+                        <h1 className="itemTitle">Dualsense</h1>
+                        <p className="price">R$899,99</p>
+                        <button className="btn actionButton">Comprar!</button>
+                        <button className="btn actionButton">Adicionar ao carrinho
+                        <i className="bi bi-cart-fill"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div className="card"> 
+
+                    <div className="consoleContent">
+                        <h1 className="itemTitle">Playstation 4 Pro</h1>
+                        <p className="price">R$1,999,99</p>
+                        <button className="btn actionButton">Comprar!</button>
+                        <button className="btn actionButton">Adicionar ao carrinho
+                        <i className="bi bi-cart-fill"></i>
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div className="card"> 
+
+                    <div className="consoleContent">
+                        <h1 className="itemTitle">Xbox series X</h1>
+                        <p className="price">R$4,999,99</p>
+                        <button className="btn actionButton">Comprar!</button>
+                        <button className="btn actionButton">Adicionar ao carrinho
+                        <i className="bi bi-cart-fill"></i>
+                        </button>
+                    </div>
+                    
+                </div>
+
+                <div className="card"> 
+
+                    <div className="consoleContent">
+                        <h1 className="itemTitle">Playstation Headset</h1>
+                        <p className="price">R299,99</p>
+                        <button className="btn actionButton">Comprar!</button>
+                        <button className="btn actionButton">Adicionar ao carrinho
+                        <i className="bi bi-cart-fill"></i>
+                        </button>
+                    </div>
+                    
+                </div>
             </div>
         </section>
     )
