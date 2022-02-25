@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/gamestore/static/css/main.5e8ec924.css",
-    "main.js": "/gamestore/static/js/main.d6fe6aa2.js",
+    "main.css": "/gamestore/static/css/main.dff7c911.css",
+    "main.js": "/gamestore/static/js/main.0970f562.js",
     "static/js/787.f1f46333.chunk.js": "/gamestore/static/js/787.f1f46333.chunk.js",
+    "static/media/PS4Pro.png": "/gamestore/static/media/PS4Pro.d793c94d2313b880e8a7.png",
     "static/media/horizonHighlight.jpg": "/gamestore/static/media/horizonHighlight.9623753a8426a619578c.jpg",
+    "static/media/xboxSX.png": "/gamestore/static/media/xboxSX.72d571d368ac070316ae.png",
     "static/media/redDeadGame.jpg": "/gamestore/static/media/redDeadGame.270ce0d4612bfa5048e1.jpg",
+    "static/media/headset.png": "/gamestore/static/media/headset.5493bc239fcc52f9e469.png",
     "static/media/codBo4Game.jpg": "/gamestore/static/media/codBo4Game.3cf70faeb966dbc97f76.jpg",
     "static/media/RE-Village-Highlight.jpg": "/gamestore/static/media/RE-Village-Highlight.112f65af2ed96e486f21.jpg",
     "static/media/mk12Game.jpg": "/gamestore/static/media/mk12Game.0829d882c8acfc96d9b9.jpg",
@@ -13,13 +16,14 @@
     "static/media/batmanGame.jpg": "/gamestore/static/media/batmanGame.97a76e8f7b5e2fc0d1cd.jpg",
     "static/media/R6-Highlight.jpeg": "/gamestore/static/media/R6-Highlight.e1af9eb38b292a6e0d2e.jpeg",
     "static/media/tlowGame.jpg": "/gamestore/static/media/tlowGame.ab7c6c5381b53bd50990.jpg",
+    "static/media/PS5Preto.jpg": "/gamestore/static/media/PS5Preto.bb07cd2abbe2b4e3d116.jpg",
     "index.html": "/gamestore/index.html",
-    "main.5e8ec924.css.map": "/gamestore/static/css/main.5e8ec924.css.map",
-    "main.d6fe6aa2.js.map": "/gamestore/static/js/main.d6fe6aa2.js.map",
+    "main.dff7c911.css.map": "/gamestore/static/css/main.dff7c911.css.map",
+    "main.0970f562.js.map": "/gamestore/static/js/main.0970f562.js.map",
     "787.f1f46333.chunk.js.map": "/gamestore/static/js/787.f1f46333.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e8ec924.css",
-    "static/js/main.d6fe6aa2.js"
+    "static/css/main.dff7c911.css",
+    "static/js/main.0970f562.js"
   ]
 }
