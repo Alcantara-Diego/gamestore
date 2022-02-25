@@ -125,10 +125,10 @@
 
 @media screen and (max-width: 870px){
     .highlightsSection{
-        padding: 1.5rem .5rem;
+        // padding: 1.5rem .5rem;
 
         .highlight{
-            width: 48%;
+            // width: 48%;
 
             .actionButton{
                 width: 210px!important;
@@ -138,6 +138,12 @@
     }
 }
 
+@media screen and (max-width: 700px){
+    .highlightsSection .highlight{
+        width: 100%;
+        margin-bottom: 3px;
+    }
+}
 
 
 // ---------- FIRST ROW OF GAMES SECTION -----------
@@ -207,5 +213,88 @@
             }
         }
         
+    }
+}
+
+@media screen and (max-width: 810px){
+    .newArrivals{
+        .cardsContainer{
+            .card{
+                width: 225px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px){
+    .newArrivals{
+        .cardsContainer{
+            .card{
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 721px){
+    .newArrivals{
+        .cardsContainer{
+            .card{
+                width: 180px;
+                height: 340px;
+
+                .imgContainer{
+                    height: 170px;
+                    img{
+                        height: 170px;
+                    }
+                }
+
+                .itemTitleInSimpleCard{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .section{
+        padding: 2rem 1rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 780px){
+    .newArrivals{
+        .cardsContainer{
+            .card{
+                width: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px){
+    .newArrivals{
+        .cardsContainer{
+            .card{
+                width: 45%;
+                height: 330px;
+
+                .imgContainer{
+                    height: 150px;
+                    img{
+                        height: 150px;
+                    }
+                }
+
+                .simpleCardContent{
+                    padding: 12px 7px;
+                }
+
+            }
+        }
     }
 }

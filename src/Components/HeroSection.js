@@ -2,10 +2,10 @@ import '../style/heroSection.css';
 
 function HeroSection(){
     return(
-        <main className="heroSection">
+        <main className="heroSection position-relative">
             <div className="heroSectionContent w-100 d-flex flex-column justify-content-center">
                 <div className="buyItemHeroSection w-100 fw-bold d-flex flex-column justify-content-center align-items-center">
-                    <p>Spider-Man Miles Morales</p>
+                    <p>Spider-Man Miles Morales PS5</p>
 
                     <button className="px-4 py-2">Comprar agora!</button>
                 </div>

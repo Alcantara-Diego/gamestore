@@ -19,7 +19,7 @@ function NewArrivals(){
                     
                     <div className="simpleCardContent">
                         <div className="simpleCardTopInfo">
-                            <h4 className="itemTitleInSimpleCard">The last of us 2</h4>
+                            <h4 className="itemTitleInSimpleCard">The last of us parte 2</h4>
 
                             <div className="itemRate">
                                 <i className="bi bi-heart-fill"></i>
