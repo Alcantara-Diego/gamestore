@@ -11,9 +11,9 @@ function HeroSection(){
                 </div>
 
                 <div className="navigateBetweenSectionCards mt-5 d-flex flex-row justify-content-center">
-                    <div className="card"><i className="bi bi-star"></i> Novo
+                    <div className="card"><i className="bi bi-star"></i> Destaques
                     </div>
-                    <div className="card"><i className="bi bi-controller"></i> Jogos
+                    <div className="card"><i className="bi bi-controller"></i> Consoles
                     </div>
                     <div className="card"><i className="bi bi-cash-coin"></i> Ofertas
                     </div>

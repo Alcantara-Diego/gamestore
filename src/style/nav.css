@@ -4,9 +4,10 @@ nav {
 }
 
 .logo {
-  font-size: 2.2rem;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#b6a235), to(gold));
-  background-image: linear-gradient(to bottom right, #b6a235, gold);
+  font-size: 1.7rem;
+  white-space: nowrap;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff884f), to(#ffb81e));
+  background-image: linear-gradient(to bottom right, #ff884f, #ffb81e);
   color: black;
 }
 

@@ -1,7 +1,9 @@
+import fire from '..'
+
 function Nav(){
     return(
         <nav className="w-100 p-0 d-flex flex-row align-items-end">
-            <div className="logo h-100 px-5 py-3 fw-bold">GameStore</div>
+            <div className="logo h-100 px-5 py-3 fw-bold">FlameStore🔥</div>
 
             {/* Hamburguer on mobile screens */}
             <button className="mobileHamburguer"><i className="bi bi-list"></i></button>

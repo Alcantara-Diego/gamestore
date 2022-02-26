@@ -29,8 +29,8 @@ main .heroSectionContent .buyItemHeroSection button {
   color: white;
   -webkit-transition: .350s;
   transition: .350s;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#b6a235), to(gold));
-  background-image: linear-gradient(to bottom right, #b6a235, gold);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff884f), to(#ffb81e));
+  background-image: linear-gradient(to bottom right, #ff884f, #ffb81e);
 }
 
 main .heroSectionContent .buyItemHeroSection button:hover {
@@ -41,6 +41,7 @@ main .heroSectionContent .buyItemHeroSection button:hover {
 main .heroSectionContent .navigateBetweenSectionCards {
   color: white;
   margin-bottom: 20px;
+  gap: 10px;
 }
 
 main .heroSectionContent .navigateBetweenSectionCards .card {

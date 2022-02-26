@@ -11,7 +11,7 @@ function ConsolesSection(){
                         
 
                         <h1 className="itemTitle">Playstation 5</h1>
-                        <h5 className="price">R$4,999,99</h5>
+                        <h5 className="price">R$4,699,99</h5>
                         <button className="btn actionButton">Comprar!</button>
                         <button className="btn actionButton">Adicionar ao carrinho
                         <i className="bi bi-cart-fill"></i>
@@ -23,7 +23,7 @@ function ConsolesSection(){
 
                     <div className="consoleContent">
                         <h1 className="itemTitle">Dualsense</h1>
-                        <p className="price">R$899,99</p>
+                        <p className="price">R$429,90</p>
                         <button className="btn actionButton">Comprar!</button>
                         <button className="btn actionButton">Adicionar ao carrinho
                         <i className="bi bi-cart-fill"></i>
@@ -36,7 +36,7 @@ function ConsolesSection(){
 
                     <div className="consoleContent">
                         <h1 className="itemTitle">Playstation 4 Pro</h1>
-                        <p className="price">R$1,999,99</p>
+                        <p className="price">R$4,189,90</p>
                         <button className="btn actionButton">Comprar!</button>
                         <button className="btn actionButton">Adicionar ao carrinho
                         <i className="bi bi-cart-fill"></i>
@@ -49,7 +49,7 @@ function ConsolesSection(){
 
                     <div className="consoleContent">
                         <h1 className="itemTitle">Xbox series X</h1>
-                        <p className="price">R$4,999,99</p>
+                        <p className="price">R$4,499,99</p>
                         <button className="btn actionButton">Comprar!</button>
                         <button className="btn actionButton">Adicionar ao carrinho
                         <i className="bi bi-cart-fill"></i>
@@ -62,7 +62,7 @@ function ConsolesSection(){
 
                     <div className="consoleContent">
                         <h1 className="itemTitle">Playstation Headset</h1>
-                        <p className="price">R299,99</p>
+                        <p className="price">R$149,90</p>
                         <button className="btn actionButton">Comprar!</button>
                         <button className="btn actionButton">Adicionar ao carrinho
                         <i className="bi bi-cart-fill"></i>

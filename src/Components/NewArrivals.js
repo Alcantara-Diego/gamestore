@@ -31,7 +31,9 @@ function NewArrivals(){
                     </div>
 
                         <div className="simpleCardBottomInfo">
-                            <p className="price">R$129.99</p>
+                            
+                            <p className="price">R$249.90</p>
+                            
                             <button>
                                 <i className="bi bi-cart2"></i>
                             </button>
@@ -61,7 +63,7 @@ function NewArrivals(){
                     </div>
 
                         <div className="simpleCardBottomInfo">
-                            <p className="price">R$299.99</p>
+                            <p className="price">R$279.99</p>
                             <button>
                                 <i className="bi bi-cart2"></i>
                             </button>
@@ -93,7 +95,10 @@ function NewArrivals(){
                         </div>
 
                         <div className="simpleCardBottomInfo">
-                            <p className="price">R$149.99</p>
+                            <div className="discountContainer">
+                                <p className="discount">R$160,00</p>
+                                <p className="price">R$109.99</p>
+                            </div>
                             <button>
                                 <i className="bi bi-cart2"></i>
                             </button>
@@ -102,7 +107,7 @@ function NewArrivals(){
                     </div>
                 </div>
 
-                {/* MK12 */}
+                {/* MK11 */}
                 <div className="card">
                     <div className="imgContainer">
                         <img src={mk12Game}  alt="."></img>
@@ -122,7 +127,7 @@ function NewArrivals(){
                     </div>
 
                         <div className="simpleCardBottomInfo">
-                            <p className="price">R$129.99</p>
+                            <p className="price">R$149.99</p>
                             <button>
                                 <i className="bi bi-cart2"></i>
                             </button>
@@ -153,7 +158,10 @@ function NewArrivals(){
                         </div>
 
                         <div className="simpleCardBottomInfo">
-                            <p className="price">R$199.99</p>
+                            <div className="discountContainer">
+                                <p className="discount">R$250,00</p>
+                                <p className="price">R$129.99</p>
+                            </div>
                             <button>
                                 <i className="bi bi-cart2"></i>
                             </button>

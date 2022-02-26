@@ -19,6 +19,7 @@
         background-color: gainsboro;
     }
     &:hover{
+        color: black;
         border: 2px solid black;
     }
 }
@@ -132,6 +133,7 @@
                 display: flex;
                 align-items: center;
             }
+
         }
         
     }
@@ -175,6 +177,12 @@
         margin-bottom: 1.5rem;
         color: gainsboro;
         background-color: #504f50;
+        transition: .400s;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #414141;
+        }
 
         .imgContainer{
             background-color: white;
@@ -216,6 +224,13 @@
                     margin-bottom: 0;
                     font-weight: bold;
                     color: white;
+                }
+
+                .discount{
+                    font-size: 0.9rem;
+                    text-decoration: line-through;
+                    margin: 0;
+    
                 }
 
                 button{
