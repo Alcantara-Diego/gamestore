@@ -3,6 +3,7 @@ import Nav from './Components/Nav'
 import HeroSection from './Components/HeroSection';
 import FirstSection from './Components/FirstSection';
 import ConsolesSection from './Components/ConsolesSection';
+import DiscountSection from './Components/DiscountSection';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <HeroSection/>
       <FirstSection/>
       <ConsolesSection/>
+      <DiscountSection/>
     </div>
   );
 }

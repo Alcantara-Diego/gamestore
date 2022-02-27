@@ -23,6 +23,44 @@
         border: 2px solid black;
     }
 }
+@mixin mostSoldBadge{
+
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 150px;
+    height: 150px;
+    @include flexCenter();
+    opacity: 1;
+    overflow: hidden;
+    z-index: 100;
+
+    &:before{
+        content: 'Mais vendido!';
+        position: absolute;
+        width: 150%;
+        height: 50px;
+        @include flexCenter();
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        background-color: red;
+        transform: rotate(-45deg) translateY(-20px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+@mixin discountBadge{
+    content: '-50%';
+    @include flexCenter();
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-weight: bold;
+    background-color: red;
+}
 @mixin showOnHover{
     transition: .600s;
     opacity: 0;
@@ -246,7 +284,7 @@
 }
 
 @media screen and (max-width: 810px){
-    .newArrivals{
+    .newArrivals, .discountSection{
         .cardsContainer{
             .card{
                 width: 225px;
@@ -256,7 +294,7 @@
 }
 
 @media screen and (max-width: 780px){
-    .newArrivals{
+    .newArrivals, .discountSection{
         .cardsContainer{
             .card{
                 width: 200px;
@@ -266,7 +304,7 @@
 }
 
 @media screen and (max-width: 721px){
-    .newArrivals{
+    .newArrivals, .discountSection{
         .cardsContainer{
             .card{
                 width: 180px;
@@ -296,7 +334,7 @@
 
 
 @media screen and (max-width: 780px){
-    .newArrivals{
+    .newArrivals, .discountSection{
         .cardsContainer{
             .card{
                 width: 200px;
@@ -306,7 +344,7 @@
 }
 
 @media screen and (max-width: 440px){
-    .newArrivals{
+    .newArrivals, .discountSection{
         .cardsContainer{
             .card{
                 width: 45%;
@@ -379,29 +417,7 @@
 
             // MOST SOLD DECORATION
             span{
-                position: absolute;
-                top: -10px;
-                left: -10px;
-                width: 150px;
-                height: 150px;
-                @include flexCenter();
-                opacity: 1;
-                overflow: hidden;
-                z-index: 100;
-
-                &:before{
-                    content: 'Mais vendido!';
-                    position: absolute;
-                    width: 150%;
-                    height: 50px;
-                    @include flexCenter();
-                    color: white;
-                    font-weight: bold;
-                    letter-spacing: 1px;
-                    background-color: red;
-                    transform: rotate(-45deg) translateY(-20px);
-                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-                }
+                @include mostSoldBadge();
             }
 
             .itemTitle{
@@ -487,5 +503,29 @@
     }    
 }
 
+// ---------- DISCOUNT SECTION -----------
+.discountSection{
+    background-image: radial-gradient(#3b3b3b, #202020);
+
+    .card{
+
+        &::before{
+            @include discountBadge();
+        }
+        
+    }
+
+    .simpleCardContent{
+        background-color: #b31b1b;
+
+        .itemTitleInSimpleCard{
+            color: wheat;
+        }
+
+        .bi-heart-fill {
+            color: white!important;
+        }
+    }
+}
 
 
