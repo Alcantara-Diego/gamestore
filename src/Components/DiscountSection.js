@@ -9,6 +9,7 @@ function DiscountSection(){
         <section className="section discountSection">
             <h3 className="sectionTitle">Ofertas por tempo limitado!</h3>
 
+            <div className="discountWarning">🔥Até a próxima sexta-feira🔥</div>
             <div className="cardsContainer">
 
                 {/* SPIDERMAN */}
@@ -33,8 +34,8 @@ function DiscountSection(){
                         <div className="simpleCardBottomInfo">
                             
                             <div className="discountContainer">
-                                <p className="discount">R$160,00</p>
-                                <p className="price">R$109.99</p>
+                                <p className="discount">R$230,00</p>
+                                <p className="price">R$161.00</p>
                             </div>
                             
                             <button>
@@ -67,8 +68,8 @@ function DiscountSection(){
                         <div className="simpleCardBottomInfo">
                             
                             <div className="discountContainer">
-                                <p className="discount">R$160,00</p>
-                                <p className="price">R$109.99</p>
+                                <p className="discount">R$280,00</p>
+                                <p className="price">R$209.90</p>
                             </div>
                             
                             <button>
@@ -95,14 +96,14 @@ function DiscountSection(){
                                 <i className="bi bi-heart-fill"></i>
                                 <i className="bi bi-heart-fill"></i>
                                 <i className="bi bi-heart-fill"></i>
-                                <i className="bi bi-heart-fill"></i>
+                                <i className="bi bi-heart"></i>
                             </div>
                     </div>
 
                         <div className="simpleCardBottomInfo">
                             <div className="discountContainer">
-                                <p className="discount">R$160,00</p>
-                                <p className="price">R$109.99</p>
+                                <p className="discount">R$110,00</p>
+                                <p className="price">R$99.00</p>
                             </div>
                             <button>
                                 <i className="bi bi-cart2"></i>
@@ -135,8 +136,8 @@ function DiscountSection(){
 
                         <div className="simpleCardBottomInfo">
                             <div className="discountContainer">
-                                <p className="discount">R$160,00</p>
-                                <p className="price">R$109.99</p>
+                                <p className="discount">R$196,00</p>
+                                <p className="price">R$117.50</p>
                             </div>
                             <button>
                                 <i className="bi bi-cart2"></i>
@@ -170,8 +171,8 @@ function DiscountSection(){
 
                         <div className="simpleCardBottomInfo">
                             <div className="discountContainer">
-                                <p className="discount">R$160,00</p>
-                                <p className="price">R$109.99</p>
+                                <p className="discount">R$280,00</p>
+                                <p className="price">R$69.90</p>
                             </div>
                             <button>
                                 <i className="bi bi-cart2"></i>

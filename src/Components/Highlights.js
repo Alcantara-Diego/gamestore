@@ -32,7 +32,7 @@ function Highlights(){
 
 
                 <div className="highlightActionButtons">
-                <h1 className="itemTitle">God of War</h1>
+                <h1 className="itemTitle">Grand Theft Auto V</h1>
                     <button className="btn actionButton">Comprar!</button>
                     <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>
@@ -40,8 +40,8 @@ function Highlights(){
                 </div>
 
                 <div className="highlightBottomInfo">
-                    <div className="highlightName">Novo</div>
-                    <div className="price">R$299,99</div>
+                    <div className="highlightName">Destaque</div>
+                    <div className="price">R$117,50</div>
                 </div>
 
             </div>
@@ -57,14 +57,14 @@ function Highlights(){
 
                 <div className="highlightBottomInfo">
                     <div className="highlightName">Oferta</div>
-                    <div className="price">R$99,99</div>
+                    <div className="price">R$209,90</div>
                 </div>
 
             </div>
             <div id="hilight4" className="highlight">
 
                 <div className="highlightActionButtons">
-                <h1 className="itemTitle">Rainbow Six Siege</h1>
+                <h1 className="itemTitle">God of war</h1>
                     <button className="btn actionButton">Comprar!</button>
                     <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>

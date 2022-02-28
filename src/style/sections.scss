@@ -49,8 +49,8 @@
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     }
 }
-@mixin discountBadge{
-    content: '-50%';
+@mixin discountBadge($percentage){
+    content: $percentage;
     @include flexCenter();
     position: absolute;
     top: -15px;
@@ -110,15 +110,15 @@
         }
 
         &:nth-of-type(2){
-            background-image: url(../assets/highlightImages/gowHighlight.jpg);
+            background-image: url(../assets/highlightImages/gtaHighlight.jpeg);
         }
         &:nth-of-type(3){
             background-position: center;
             background-image: url(../assets/highlightImages/RE-Village-Highlight.jpg);
         }
         &:nth-of-type(4){
-            background-position: center;
-            background-image: url(../assets/highlightImages/R6-Highlight.jpeg);
+            background-size: cover;
+            background-image: url(../assets/highlightImages/gowHighlight.jpg);
         }
 
 
@@ -507,10 +507,35 @@
 .discountSection{
     background-image: radial-gradient(#3b3b3b, #202020);
 
-    .card{
+    .discountWarning{
+        background-color: orange;
+        width: fit-content;
+        margin-bottom: 30px;
+        padding: .5rem;
+        border: 3px solid black;
+        font-weight: bold;
+    }
 
-        &::before{
-            @include discountBadge();
+    .card{
+        border: 2px solid #00000000;
+        &:hover{
+            border: 2px solid gainsboro;
+        }
+
+        &:nth-of-type(1)::before{
+            @include discountBadge("-30%");
+        }
+        &:nth-of-type(2)::before{
+            @include discountBadge("-25%");
+        }
+        &:nth-of-type(3)::before{
+            @include discountBadge("-10%");
+        }
+        &:nth-of-type(4)::before{
+            @include discountBadge("-40%");
+        }
+        &:nth-of-type(5)::before{
+            @include discountBadge("-75%");
         }
         
     }
@@ -528,4 +553,13 @@
     }
 }
 
-
+@media screen and (max-width: 500px){
+    .cardsContainer{
+        .card{
+            &::before{
+                width: 54px!important;
+                height: 54px!important;
+            }
+        }
+    }
+}

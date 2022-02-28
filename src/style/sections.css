@@ -52,7 +52,7 @@
 }
 
 .highlightsSection .highlight:nth-of-type(2) {
-  background-image: url(../assets/highlightImages/gowHighlight.jpg);
+  background-image: url(../assets/highlightImages/gtaHighlight.jpeg);
 }
 
 .highlightsSection .highlight:nth-of-type(3) {
@@ -61,8 +61,8 @@
 }
 
 .highlightsSection .highlight:nth-of-type(4) {
-  background-position: center;
-  background-image: url(../assets/highlightImages/R6-Highlight.jpeg);
+  background-size: cover;
+  background-image: url(../assets/highlightImages/gowHighlight.jpg);
 }
 
 .highlightsSection .highlight .highlightActionButtons {
@@ -577,8 +577,127 @@
   background-image: radial-gradient(#3b3b3b, #202020);
 }
 
-.discountSection .card::before {
-  content: '-50%';
+.discountSection .discountWarning {
+  background-color: orange;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 30px;
+  padding: .5rem;
+  border: 3px solid black;
+  font-weight: bold;
+}
+
+.discountSection .card {
+  border: 2px solid #00000000;
+}
+
+.discountSection .card:hover {
+  border: 2px solid gainsboro;
+}
+
+.discountSection .card:nth-of-type(1)::before {
+  content: "-30%";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: red;
+}
+
+.discountSection .card:nth-of-type(2)::before {
+  content: "-25%";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: red;
+}
+
+.discountSection .card:nth-of-type(3)::before {
+  content: "-10%";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: red;
+}
+
+.discountSection .card:nth-of-type(4)::before {
+  content: "-40%";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-weight: bold;
+  background-color: red;
+}
+
+.discountSection .card:nth-of-type(5)::before {
+  content: "-75%";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -612,5 +731,12 @@
 
 .discountSection .simpleCardContent .bi-heart-fill {
   color: white !important;
+}
+
+@media screen and (max-width: 500px) {
+  .cardsContainer .card::before {
+    width: 54px !important;
+    height: 54px !important;
+  }
 }
 /*# sourceMappingURL=sections.css.map */
