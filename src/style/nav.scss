@@ -57,8 +57,10 @@ nav{
 }
 .contentSecondColumn{
     display: flex;
+    flex-direction: row;
 }
 .contentSecondColumn ul{
+    flex-direction: row;
     list-style: none;
     color: white;
     padding: 0.5rem;
@@ -72,14 +74,51 @@ nav{
         color: gold;
     }
 }
-
+.closeBtn{
+    display: none;
+    position: absolute;
+    top: -5px;
+    right: 5px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    transition: .300s;
+    &:hover{
+        color: gold;
+    }
+}
 @media screen and (max-width: 780px){
     .mobileHamburguer{
         display: block!important;
     }
 
-    .contentSecondColumn{
+    .hideNavOptions{
         display: none;
+    }
+    .closeBtn{
+        display: block;
+    }
+    .contentSecondColumn{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 25px;
+        flex-direction: column;
+        background-image: radial-gradient(#3b3b3b, #202020);
+        border: 1px solid gainsboro;
+        transition: .800s;
+        z-index: 10;
+
+        ul{
+            flex-direction: column;
+            overflow: hidden;
+
+            li:hover{
+                padding-left: 3px;
+                border-bottom: 1px solid gold;
+            }
+        }
     }
 }
 

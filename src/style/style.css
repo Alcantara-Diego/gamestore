@@ -895,9 +895,17 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .contentSecondColumn ul {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   list-style: none;
   color: white;
   padding: 0.5rem;
@@ -915,12 +923,58 @@ nav {
   color: gold;
 }
 
+.closeBtn {
+  display: none;
+  position: absolute;
+  top: -5px;
+  right: 5px;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  -webkit-transition: .300s;
+  transition: .300s;
+}
+
+.closeBtn:hover {
+  color: gold;
+}
+
 @media screen and (max-width: 780px) {
   .mobileHamburguer {
     display: block !important;
   }
-  .contentSecondColumn {
+  .hideNavOptions {
     display: none;
+  }
+  .closeBtn {
+    display: block;
+  }
+  .contentSecondColumn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: radial-gradient(#3b3b3b, #202020);
+    border: 1px solid gainsboro;
+    -webkit-transition: .800s;
+    transition: .800s;
+    z-index: 10;
+  }
+  .contentSecondColumn ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+  }
+  .contentSecondColumn ul li:hover {
+    padding-left: 3px;
+    border-bottom: 1px solid gold;
   }
 }
 

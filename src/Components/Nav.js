@@ -1,12 +1,16 @@
-import fire from '..'
+
 
 function Nav(){
+
+    function toggleNavInMobile(){
+        document.querySelector(".contentSecondColumn").classList.toggle("hideNavOptions");
+    }
     return(
         <nav className="w-100 p-0 d-flex flex-row align-items-end">
             <div className="logo h-100 px-5 py-3 fw-bold">FlameStore🔥</div>
 
             {/* Hamburguer on mobile screens */}
-            <button className="mobileHamburguer"><i className="bi bi-list"></i></button>
+            <button className="mobileHamburguer" onClick={toggleNavInMobile}><i className="bi bi-list"></i></button>
 
             {/* Nav options */}
             <div className="navContent w-100 px-3 d-flex flex-column">
@@ -24,8 +28,9 @@ function Nav(){
                 </div>
 
                 {/* Options on second line */}
-                <div className="contentSecondColumn flex-row justify-content-between">
-                    <ul className="navOptions d-flex flex-row mb-0">
+                <div className="contentSecondColumn justify-content-between">
+                    <ul className="navOptions d-flex mb-0">
+                        <button className="closeBtn" onClick={toggleNavInMobile}>&times;</button>
                         <li className="navOption">Home</li>
                     
                         <li className="navOption">Consoles</li>
@@ -33,7 +38,7 @@ function Nav(){
                         <li className="navOption">Jogos</li>
                     </ul>
 
-                    <ul className="d-flex flex-row mb-0">
+                    <ul className="d-flex mb-0">
                         <li>Carrinho<i className="bi bi-cart2"></i></li>
                         <li>Conta<i className="bi bi-person"></i></li>
                     </ul>
