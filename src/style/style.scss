@@ -42,6 +42,14 @@
 }
 
 
+footer{
+    height: 6rem;
+    background-color: #464546;
+    color: white;
+    @include flexCenter();
+
+}
+
 
 
 

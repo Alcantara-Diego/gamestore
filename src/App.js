@@ -4,6 +4,7 @@ import HeroSection from './Components/HeroSection';
 import FirstSection from './Components/FirstSection';
 import ConsolesSection from './Components/ConsolesSection';
 import DiscountSection from './Components/DiscountSection';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <FirstSection/>
       <ConsolesSection/>
       <DiscountSection/>
+      <Footer/>
     </div>
   );
 }
