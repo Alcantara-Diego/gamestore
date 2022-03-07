@@ -1049,8 +1049,7 @@ nav {
 }
 
 footer {
-  height: 6rem;
-  background-color: #464546;
+  height: 21vh;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1065,5 +1064,31 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #0e0d0d;
+}
+
+footer a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+footer a:hover {
+  color: #ff884f;
+  text-decoration: underline;
+}
+
+footer p {
+  color: gray;
 }
 /*# sourceMappingURL=style.css.map */

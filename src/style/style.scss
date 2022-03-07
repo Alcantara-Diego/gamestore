@@ -43,10 +43,32 @@
 
 
 footer{
-    height: 6rem;
-    background-color: #464546;
+    height: 21vh;
     color: white;
     @include flexCenter();
+    flex-direction: column;
+    padding: 20px;
+    background-color: #0e0d0d;
+
+    a{
+        width: fit-content;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-top: 10px;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        transition: 300ms;
+
+        &:hover{
+            color: #ff884f;
+            text-decoration: underline;
+        }
+    }
+
+    p{
+        color: gray;
+    }
 
 }
 
