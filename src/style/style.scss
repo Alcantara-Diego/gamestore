@@ -86,3 +86,48 @@ footer{
 
 
 
+.moreInfoContainer{
+    width: 100vw;
+    height: 100vh;
+    padding: 0 4rem;
+    color: white;
+    background-color: black;
+}
+.moreInfoContent{
+    background-color: #2e2e2e;
+    height: 100vh;
+    padding: 20px;
+
+    .bi-heart, .bi-heart-fill{
+        margin: 0 .6px;
+        font-size: .8rem;
+    }
+    .bi-heart-fill{
+        color: red; 
+    }
+}
+.ProductImage{
+    border: 1px solid white;
+    width: 400px;
+    height: 400px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../assets/gamesImages/spidermanGame.jpg);
+}
+.deliveredByText{
+    display: inline;
+    color: gainsboro;
+    white-space: nowrap;
+
+    div{
+        display: inline;
+        font-weight: bold;
+        color: green;
+    }
+}
+.oldPrice{
+    color: gainsboro;
+    text-decoration: line-through;
+    margin-bottom: 0;
+}

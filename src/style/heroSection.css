@@ -21,11 +21,12 @@ main .heroSectionContent .buyItemHeroSection p {
   text-align: center;
 }
 
-main .heroSectionContent .buyItemHeroSection button {
+main .heroSectionContent .buyItemHeroSection .actionButton {
   font-size: 1.6rem;
   border: 2px solid #00000000;
   border-radius: 15px;
   font-weight: bold;
+  text-decoration: none;
   color: white;
   -webkit-transition: .350s;
   transition: .350s;
@@ -33,7 +34,7 @@ main .heroSectionContent .buyItemHeroSection button {
   background-image: linear-gradient(to bottom right, #ff884f, #ffb81e);
 }
 
-main .heroSectionContent .buyItemHeroSection button:hover {
+main .heroSectionContent .buyItemHeroSection .actionButton:hover {
   color: black;
   border: 2px solid black;
 }

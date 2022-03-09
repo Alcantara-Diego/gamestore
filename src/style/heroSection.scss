@@ -21,11 +21,12 @@ main{
                 text-align: center;
             }
 
-            button{
+            .actionButton{
                 font-size: 1.6rem;
                 border: 2px solid #00000000;
                 border-radius: 15px;
                 font-weight: bold;
+                text-decoration: none;
                 color: white;
                 transition: .350s;
                 background-image: linear-gradient(to bottom right, #ff884f, #ffb81e);
