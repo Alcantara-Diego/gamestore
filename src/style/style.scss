@@ -106,14 +106,30 @@ footer{
         color: red; 
     }
 }
+#closeDetails{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: gainsboro;
+    transition: .2s;
+
+    &:hover{
+        color: #ff884f;
+    }
+}
 .ProductImage{
-    border: 1px solid white;
     width: 400px;
     height: 400px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../assets/gamesImages/spidermanGame.jpg);
+}
+.productMainDetails{
+    margin-left: 3rem;
+    width: 80%;
 }
 .deliveredByText{
     display: inline;

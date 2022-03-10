@@ -763,11 +763,12 @@ main .heroSectionContent .buyItemHeroSection p {
   text-align: center;
 }
 
-main .heroSectionContent .buyItemHeroSection button {
+main .heroSectionContent .buyItemHeroSection .actionButton {
   font-size: 1.6rem;
   border: 2px solid #00000000;
   border-radius: 15px;
   font-weight: bold;
+  text-decoration: none;
   color: white;
   -webkit-transition: .350s;
   transition: .350s;
@@ -775,7 +776,7 @@ main .heroSectionContent .buyItemHeroSection button {
   background-image: linear-gradient(to bottom right, #ff884f, #ffb81e);
 }
 
-main .heroSectionContent .buyItemHeroSection button:hover {
+main .heroSectionContent .buyItemHeroSection .actionButton:hover {
   color: black;
   border: 2px solid black;
 }
@@ -1115,14 +1116,33 @@ footer p {
   color: red;
 }
 
+#closeDetails {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: gainsboro;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#closeDetails:hover {
+  color: #ff884f;
+}
+
 .ProductImage {
-  border: 1px solid white;
   width: 400px;
   height: 400px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(../assets/gamesImages/spidermanGame.jpg);
+}
+
+.productMainDetails {
+  margin-left: 3rem;
+  width: 80%;
 }
 
 .deliveredByText {
