@@ -1145,6 +1145,27 @@ footer p {
   width: 80%;
 }
 
+.productMainDetails ul {
+  list-style-position: inside;
+}
+
+.productMainDetails .actionButton {
+  border: 2px solid #00000000;
+  border-radius: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: .350s;
+  transition: .350s;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#2be453), to(#29ae40));
+  background-image: linear-gradient(to bottom right, #2be453, #29ae40);
+}
+
+.productMainDetails .actionButton:hover {
+  color: black;
+  border: 2px solid black;
+}
+
 .deliveredByText {
   display: inline;
   color: gainsboro;

@@ -130,6 +130,25 @@ footer{
 .productMainDetails{
     margin-left: 3rem;
     width: 80%;
+
+    ul{
+        list-style-position: inside;
+    }
+
+    .actionButton{
+        border: 2px solid #00000000;
+        border-radius: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        transition: .350s;
+        background-image: linear-gradient(to bottom right, #2be453, #29ae40);
+
+        &:hover{
+            color: black;
+            border: 2px solid black;
+        }
+    }
 }
 .deliveredByText{
     display: inline;

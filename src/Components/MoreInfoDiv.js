@@ -21,7 +21,7 @@ function MoreInfoDiv(){
                         </div>
 
 
-                        <h1 id='productName' className='mb-0'>Nome do jogo</h1>
+                        <h1 id='productName' className='mb-0'>Spider-Man PS4</h1>
                         <div className="itemRate">
                             <i className="bi bi-heart-fill"></i>
                             <i className="bi bi-heart-fill"></i>
@@ -37,7 +37,14 @@ function MoreInfoDiv(){
 
                         <div>Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the gameHere comes a description of the game</div>
 
+                        <ul className="p-0 mt-3">
+                            <li><strong>Plataforma</strong> PS4</li>
+                            <li><strong>Desenvolvedora</strong> Insomniac</li>
+                            <li><strong>Exclusivos / Super-Heróis / Mundo aberto / luta</strong></li>
+                        </ul>
 
+
+                        <button className="actionButton btn">Finalizar Compra!</button>
                     </div>
                 </section>
             </div>
