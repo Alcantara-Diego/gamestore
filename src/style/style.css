@@ -1116,6 +1116,13 @@ footer p {
   color: red;
 }
 
+.itemDetailsDiv {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 #closeDetails {
   position: absolute;
   top: 0;
@@ -1182,5 +1189,78 @@ footer p {
   color: gainsboro;
   text-decoration: line-through;
   margin-bottom: 0;
+}
+
+.suggestionSection {
+  padding-top: 1rem;
+}
+
+.suggestionSection .sectionTitle {
+  margin-top: 1.1rem;
+  margin-bottom: 0;
+  color: gainsboro;
+}
+
+.suggestionCardsContainer {
+  gap: 0;
+}
+
+.suggestionCardsContainer .suggestionCard {
+  width: 90px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 6px;
+  background: none;
+  border: 2px solid #2e2e2e;
+  overflow: hidden;
+}
+
+.suggestionCardsContainer .suggestionCard:hover {
+  border: 2px solid white;
+}
+
+.suggestionCardsContainer .suggestionCard img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .moreInfoContainer {
+    padding: 0;
+    overflow: auto;
+  }
+  .moreInfoContent {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .moreInfoContent {
+    padding: 20px 0;
+  }
+  .itemDetailsDiv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .moreInfoDivTitle {
+    margin-left: 20px;
+  }
+  .ProductImage {
+    width: 100%;
+    height: 340px;
+    background-position: left;
+    margin-left: 1rem;
+  }
+  .productMainDetails {
+    margin-left: 1rem;
+  }
+  .suggestionSection {
+    margin-left: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
-import spidermanGame from '../assets/gamesImages/spidermanGame.jpg';
+import SuggestionSection from "./SuggestionSection";
 
 function MoreInfoDiv(){
     return(
@@ -10,7 +10,7 @@ function MoreInfoDiv(){
                 <a id='closeDetails' href='/gamestore'>&times;</a>
 
 
-                <section className="contentFirstSection position-relative d-flex w-100">
+                <section className="contentFirstSection itemDetailsDiv position-relative d-flex w-100">
 
                     <div className="ProductImage">
                         
@@ -47,6 +47,8 @@ function MoreInfoDiv(){
                         <button className="actionButton btn">Finalizar Compra!</button>
                     </div>
                 </section>
+
+                <SuggestionSection/>
             </div>
         </div>
     )
