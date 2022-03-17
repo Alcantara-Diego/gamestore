@@ -228,7 +228,7 @@ footer{
     }
 
     .ProductImage {
-        width: 100%;
+        width: calc(100vw - 1rem);
         height: 340px;
         background-position: left;
     }

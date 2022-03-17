@@ -1251,16 +1251,15 @@ footer p {
     margin-left: 20px;
   }
   .ProductImage {
-    width: 100%;
+    width: calc(100vw - 1rem);
     height: 340px;
     background-position: left;
+  }
+  .ProductImage, .productMainDetails, .suggestionSection {
     margin-left: 1rem;
   }
-  .productMainDetails {
-    margin-left: 1rem;
-  }
-  .suggestionSection {
-    margin-left: 1rem;
+  .deliveredByText {
+    white-space: normal;
   }
 }
 /*# sourceMappingURL=style.css.map */

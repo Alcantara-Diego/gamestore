@@ -35,7 +35,7 @@ function MoreInfoDiv(){
                             <h3 className="Price">R$120,00</h3>
                         </div>
 
-                        <div>Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the gameHere comes a description of the game</div>
+                        <div className="mt-2">Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the gameHere comes a description of the game</div>
 
                         <ul className="p-0 mt-3">
                             <li><strong>Plataforma</strong> PS4</li>
