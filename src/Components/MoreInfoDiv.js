@@ -12,7 +12,7 @@ function MoreInfoDiv(){
 
                 <section className="contentFirstSection itemDetailsDiv position-relative d-flex w-100">
 
-                    <div className="ProductImage">
+                    <div id="productImageId" className="ProductImage">
                         
                     </div>
 
@@ -31,8 +31,8 @@ function MoreInfoDiv(){
                         </div>
 
                         <div className='PriceDiv'>
-                            <p className="oldPrice">R$250.00</p>
-                            <h3 className="Price">R$120,00</h3>
+                            <p id="productOldPrice" className="oldPrice">R$250.00</p>
+                            <h3 id="productPrice" className="Price">R$120,00</h3>
                         </div>
 
                         <div className="mt-2">Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the gameHere comes a description of the game</div>

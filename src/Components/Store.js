@@ -5,7 +5,7 @@ import ConsolesSection from './ConsolesSection';
 import DiscountSection from './DiscountSection';
 import Footer from './Footer';
 
-function Store(){
+function Store(props){
     return(
         <div className="store">
             <div className="alert fw-bold">
@@ -15,7 +15,7 @@ function Store(){
             </div>
 
             <Nav/>
-            <HeroSection/>
+            <HeroSection updateDetailsPage={props.updateDetailsPage}/>
             <FirstSection/>
             <ConsolesSection/>
             <DiscountSection/>
