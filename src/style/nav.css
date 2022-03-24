@@ -1,6 +1,10 @@
 nav {
   position: relative;
   background-image: radial-gradient(#3b3b3b, #202020);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .logo {

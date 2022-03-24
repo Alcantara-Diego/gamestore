@@ -7,7 +7,7 @@ function MoreInfoDiv(){
                 <h3 className="moreInfoDivTitle mb-0">Mais detalhes!</h3>
                 <hr className=" mt-1 mb-4"></hr>
 
-                <a id='closeDetails' href='/gamestore'>&times;</a>
+                <a id='closeDetails' className="closeBtn" href='/gamestore'>&times;</a>
 
 
                 <section className="contentFirstSection itemDetailsDiv position-relative d-flex w-100">

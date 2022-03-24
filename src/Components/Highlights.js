@@ -1,9 +1,10 @@
-function Highlights(){
+function Highlights(props){
 
     function itemAddedToCart(){
         let cartAlert = document.getElementsByClassName("alert")[0]
         
         cartAlert.style.animation="showAlert 4s";
+        props.toggleCart();
 
         setTimeout( ()=>{
             cartAlert.style.animation="none";

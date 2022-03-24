@@ -1000,10 +1000,23 @@ nav {
           box-sizing: border-box;
 }
 
+.closeBtn {
+  position: absolute;
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: gainsboro;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.closeBtn:hover {
+  color: #ff884f;
+}
+
 .alert {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1046,6 +1059,54 @@ nav {
   }
   100% {
     opacity: 0;
+  }
+}
+
+.cart {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -350px;
+  padding: 10px;
+  width: 350px;
+  color: gainsboro;
+  background-image: radial-gradient(#3b3b3b, #202020);
+  border: 1px solid gainsboro;
+  -webkit-transition: .800s;
+  transition: .800s;
+  z-index: 10;
+}
+
+.cart #closeCart {
+  display: block !important;
+  top: -7px;
+  right: 15px;
+}
+
+.cart .cartPaymentDiv {
+  position: absolute;
+  bottom: 0;
+  margin: -10px;
+  border-top: 1px solid gainsboro;
+}
+
+.cart .cartPaymentDiv #buyBtnCart {
+  padding: 0px 45px;
+  border-radius: 10px;
+  height: 42px;
+  font-size: .9rem;
+  font-weight: bold;
+  background-color: #d4d3d3;
+  cursor: pointer;
+}
+
+.showCart {
+  right: 0px;
+}
+
+@media screen and (max-width: 375px) {
+  .cart {
+    width: 100vw;
   }
 }
 
@@ -1128,14 +1189,6 @@ footer p {
   top: 0;
   right: 30px;
   font-size: 2.5rem;
-  text-decoration: none;
-  color: gainsboro;
-  -webkit-transition: .2s;
-  transition: .2s;
-}
-
-#closeDetails:hover {
-  color: #ff884f;
 }
 
 .ProductImage {

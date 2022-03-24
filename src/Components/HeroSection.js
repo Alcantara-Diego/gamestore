@@ -2,13 +2,7 @@ import '../style/heroSection.css';
 
 function HeroSection(props){
 
-    function action(){
-        console.log("abrindo")
-
-        setTimeout(()=>{
-            console.log("fechando")
-        },3000)
-    }
+    
     return(
         <main className="heroSection position-relative">
             <div className="heroSectionContent w-100 d-flex flex-column justify-content-center">

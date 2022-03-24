@@ -1,10 +1,11 @@
 
 
-function Nav(){
+function Nav(props){
 
     function toggleNavInMobile(){
         document.querySelector(".contentSecondColumn").classList.toggle("hideNavOptions");
     }
+
     return(
         <nav className="w-100 p-0 d-flex flex-row align-items-end">
             <div className="logo h-100 px-5 py-3 fw-bold">FlameStore🔥</div>
@@ -39,7 +40,8 @@ function Nav(){
                     </ul>
 
                     <ul className="d-flex mb-0">
-                        <li>Carrinho<i className="bi bi-cart2"></i></li>
+                        <li onClick={props.toggleCart}>Carrinho<i className="bi bi-cart2"></i></li>
+
                         <li>Conta<i className="bi bi-person"></i></li>
                     </ul>
                 </div>
