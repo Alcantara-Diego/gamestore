@@ -112,7 +112,7 @@ nav {
     display: block !important;
   }
   .hideNavOptions {
-    display: none;
+    display: none !important;
   }
   .closeBtn {
     display: block;

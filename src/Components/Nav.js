@@ -28,7 +28,7 @@ function Nav(){
                 </div>
 
                 {/* Options on second line */}
-                <div className="contentSecondColumn justify-content-between">
+                <div className="contentSecondColumn hideNavOptions justify-content-between">
                     <ul className="navOptions d-flex mb-0">
                         <button className="closeBtn" onClick={toggleNavInMobile}>&times;</button>
                         <li className="navOption">Home</li>
