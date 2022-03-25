@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gamestore/static/css/main.765ca5ac.css",
-    "main.js": "/gamestore/static/js/main.ad664d53.js",
+    "main.css": "/gamestore/static/css/main.6ada50f1.css",
+    "main.js": "/gamestore/static/js/main.1776c83c.js",
     "static/js/787.f1f46333.chunk.js": "/gamestore/static/js/787.f1f46333.chunk.js",
     "static/media/gtaHighlight.jpeg": "/gamestore/static/media/gtaHighlight.4d0ca522a644d7c5f8ff.jpeg",
     "static/media/PS4Pro.png": "/gamestore/static/media/PS4Pro.d793c94d2313b880e8a7.png",
@@ -13,7 +13,7 @@
     "static/media/headset.png": "/gamestore/static/media/headset.5493bc239fcc52f9e469.png",
     "static/media/codBo4Game.jpg": "/gamestore/static/media/codBo4Game.3cf70faeb966dbc97f76.jpg",
     "static/media/RE-Village-Highlight.jpg": "/gamestore/static/media/RE-Village-Highlight.112f65af2ed96e486f21.jpg",
-    "static/media/mk12Game.jpg": "/gamestore/static/media/mk12Game.0829d882c8acfc96d9b9.jpg",
+    "static/media/mk11Game.jpg": "/gamestore/static/media/mk11Game.0829d882c8acfc96d9b9.jpg",
     "static/media/gowHighlight.jpg": "/gamestore/static/media/gowHighlight.716832fc04c3d6782834.jpg",
     "static/media/heroSpiderman.jpg": "/gamestore/static/media/heroSpiderman.13af0bdb621d051c27f0.jpg",
     "static/media/batmanGame.jpg": "/gamestore/static/media/batmanGame.97a76e8f7b5e2fc0d1cd.jpg",
@@ -24,12 +24,12 @@
     "static/media/tlowGame.jpg": "/gamestore/static/media/tlowGame.ab7c6c5381b53bd50990.jpg",
     "static/media/PS5Preto.jpg": "/gamestore/static/media/PS5Preto.bb07cd2abbe2b4e3d116.jpg",
     "index.html": "/gamestore/index.html",
-    "main.765ca5ac.css.map": "/gamestore/static/css/main.765ca5ac.css.map",
-    "main.ad664d53.js.map": "/gamestore/static/js/main.ad664d53.js.map",
+    "main.6ada50f1.css.map": "/gamestore/static/css/main.6ada50f1.css.map",
+    "main.1776c83c.js.map": "/gamestore/static/js/main.1776c83c.js.map",
     "787.f1f46333.chunk.js.map": "/gamestore/static/js/787.f1f46333.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.765ca5ac.css",
-    "static/js/main.ad664d53.js"
+    "static/css/main.6ada50f1.css",
+    "static/js/main.1776c83c.js"
   ]
 }
