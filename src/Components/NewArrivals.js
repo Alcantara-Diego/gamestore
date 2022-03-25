@@ -2,7 +2,7 @@ import batmanGame from '../assets/gamesImages/batmanGame.jpg'
 import tlowGame from '../assets/gamesImages/tlowGame.jpg'
 import codBo4Game from '../assets/gamesImages/codBo4Game.jpg'
 import redDeadGame from '../assets/gamesImages/redDeadGame.jpg'
-import mk12Game from '../assets/gamesImages/mk12Game.jpg'
+import mk11Game from '../assets/gamesImages/mk11Game.jpg'
 
 function NewArrivals(){
     return (
@@ -110,7 +110,7 @@ function NewArrivals(){
                 {/* MK11 */}
                 <div className="card simpleCard">
                     <div className="imgContainer">
-                        <img src={mk12Game}  alt="."></img>
+                        <img src={mk11Game}  alt="."></img>
                     </div>
                     
                     <div className="simpleCardContent">

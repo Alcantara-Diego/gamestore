@@ -1,0 +1,50 @@
+
+
+.cart{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -350px;
+    padding: 10px;
+    width: 350px;
+
+    color: gainsboro;
+    background-image: radial-gradient(#3b3b3b, #202020);
+    border: 1px solid gainsboro;
+    transition: .800s;
+    z-index: 10;
+
+    #closeCart{
+        display: block!important;
+        top: -7px;
+        right: 15px;
+    }
+
+    .cartPaymentDiv{
+        position: absolute;
+        bottom: 0;
+        // this margin has to be the same as the padding value in the parent element
+        margin: -10px;
+        border-top: 1px solid gainsboro;
+
+        #buyBtnCart{
+            padding: 0px 45px;
+            border-radius: 10px;
+            height: 42px;
+            font-size: .9rem;
+            font-weight: bold;
+            background-color: #d4d3d3;
+            cursor: pointer;
+        }
+    }
+}
+
+.showCart{
+    right: 0px;
+}
+
+@media screen and (max-width: 375px){
+    .cart{
+        width: 100vw;
+    }
+}

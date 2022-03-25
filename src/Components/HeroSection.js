@@ -1,4 +1,4 @@
-import '../style/heroSection.css';
+
 
 function HeroSection(props){
 
