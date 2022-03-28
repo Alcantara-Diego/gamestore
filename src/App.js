@@ -1,10 +1,10 @@
-import { Routes, Route} from 'react-router-dom';
-import './style/style.css';
-import Store from './Components/Store';
-import MoreInfoDiv from './Components/MoreInfoDiv';
+import { Routes, Route} from 'react-router-dom'
+import './style/style.css'
+import Store from './Components/Store'
+import MoreInfoDiv from './Components/MoreInfoDiv'
 
 import tlowGame from './assets/gamesImages/tlowGame.jpg'
-import milesmorales from './assets/heroSpiderman.jpg'
+import milesmorales from './assets/gamesImages/milesmoralesGame.jpg'
 
 function App() {
 
