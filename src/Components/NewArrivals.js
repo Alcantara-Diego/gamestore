@@ -1,10 +1,16 @@
 import batmanGame from '../assets/gamesImages/batmanGame.jpg'
-import tlowGame from '../assets/gamesImages/tlowGame.jpg'
+import tlou2Game from '../assets/gamesImages/tlou2Game.png'
 import codBo4Game from '../assets/gamesImages/codBo4Game.jpg'
 import redDeadGame from '../assets/gamesImages/redDeadGame.jpg'
 import mk11Game from '../assets/gamesImages/mk11Game.jpg'
 
+import { useDispatch } from 'react-redux';
+import { updateDetails } from '../actions/detailsAction'
+
 function NewArrivals(){
+    
+    const dispatch = useDispatch();
+
     return (
         <div className="newArrivals">
             <h3 className="sectionTitle">Recém-chegados</h3>
@@ -12,9 +18,9 @@ function NewArrivals(){
             <div className="cardsContainer">
 
                 {/* THE LAST OF US 2 */}
-                <div className="card simpleCard">
+                <div onClick={() => dispatch(updateDetails("tlou2"))}  className="card simpleCard">
                     <div className="imgContainer">
-                        <img src={tlowGame}  alt="."></img>
+                        <img src={tlou2Game}  alt="."></img>
                     </div>
                     
                     <div className="simpleCardContent">
@@ -44,7 +50,7 @@ function NewArrivals(){
 
 
                 {/* RED DEAD REDEMPTION 2 */}
-                <div className="card simpleCard">
+                <div onClick={() => dispatch(updateDetails("rdr2"))} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={redDeadGame}  alt="."></img>
                     </div>
@@ -74,7 +80,7 @@ function NewArrivals(){
 
 
                 {/* BATMAN ARKHAM KNIGHT */}
-                <div className="card simpleCard">
+                <div onClick={() => dispatch(updateDetails("batmanak"))} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={batmanGame}  alt="."></img>
                     </div>
@@ -108,7 +114,7 @@ function NewArrivals(){
                 </div>
 
                 {/* MK11 */}
-                <div className="card simpleCard">
+                <div onClick={() => dispatch(updateDetails("mk11"))} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={mk11Game}  alt="."></img>
                     </div>
@@ -137,7 +143,7 @@ function NewArrivals(){
                 </div>
 
                 {/* COD BO4 */}
-                <div className="card simpleCard">
+                <div onClick={() => dispatch(updateDetails("codbo4"))} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={codBo4Game}  alt="."></img>
                     </div>

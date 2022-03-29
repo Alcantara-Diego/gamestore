@@ -4,7 +4,14 @@ import spidermanGame from '../assets/gamesImages/spidermanGame.jpg';
 import gtaGame from '../assets/gamesImages/gtaGame.jpeg';
 import cyberpunkGame from '../assets/gamesImages/cyberpunkGame.jpg';
 
+import { useDispatch } from 'react-redux';
+import { updateDetails } from '../actions/detailsAction'
+
+
 function DiscountSection(){
+
+    const dispatch = useDispatch();
+
     return(
         <section className="section discountSection">
             <h3 className="sectionTitle">Ofertas por tempo limitado!</h3>
@@ -13,7 +20,7 @@ function DiscountSection(){
             <div className="cardsContainer">
 
                 {/* SPIDERMAN */}
-                <div className="card simpleCard">
+                <div onClick={() => dispatch(updateDetails("spiderman"))} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={spidermanGame}  alt="."></img>
                     </div>
@@ -47,7 +54,7 @@ function DiscountSection(){
                 </div>
 
                 {/* RESIDENT EVIL VILLAGE */}
-                <div className="card simpleCard">
+                <div onClick={() => dispatch(updateDetails("revillage"))} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={revillageGame}  alt="."></img>
                     </div>
@@ -82,7 +89,7 @@ function DiscountSection(){
 
 
                 {/* MINECRAFT */}
-                <div className="card simpleCard">
+                <div onClick={() => dispatch(updateDetails("mine"))} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={minecraftGame}  alt="."></img>
                     </div>
@@ -114,7 +121,7 @@ function DiscountSection(){
                 </div>
 
                 {/* GTA */}
-                <div className="card simpleCard">
+                <div onClick={() => dispatch(updateDetails("gtav"))} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={gtaGame}  alt="."></img>
                     </div>
@@ -149,7 +156,7 @@ function DiscountSection(){
 
 
                 {/* CYBERPUNK 2077 */}
-                <div className="card simpleCard">
+                <div onClick={() => dispatch(updateDetails("2077"))} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={cyberpunkGame}  alt="."></img>
                     </div>

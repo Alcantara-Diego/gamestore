@@ -1,13 +1,17 @@
 import SuggestionSection from "./SuggestionSection";
 
 function MoreInfoDiv(){
+
+    function goBackHome(){
+        window.location.hash="";
+    }
     return(
         <div className="moreInfoContainer">
             <div className="moreInfoContent position-relative">
                 <h3 className="moreInfoDivTitle mb-0">Mais detalhes!</h3>
                 <hr className=" mt-1 mb-4"></hr>
 
-                <a id='closeDetails' className="closeBtn" href='/gamestore'>&times;</a>
+                <button onClick={goBackHome} id='closeDetails' className="closeBtn" href='/gamestore'>&times;</button>
 
 
                 <section className="contentFirstSection itemDetailsDiv position-relative d-flex w-100">
@@ -37,10 +41,15 @@ function MoreInfoDiv(){
 
                         <div className="mt-2">Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the gameHere comes a description of the game</div>
 
-                        <ul className="p-0 mt-3">
-                            <li><strong>Plataforma</strong> PS4</li>
-                            <li><strong>Desenvolvedora</strong> Insomniac</li>
-                            <li><strong>Exclusivos / Super-Heróis / Mundo aberto / luta</strong></li>
+                        <ul className="extraInfoList p-0 mt-3">
+                            <li>
+                                <strong>Plataforma</strong> <p id="productPlatform">PS4</p>
+                            </li>
+                            <li>
+                                <strong>Desenvolvedora</strong> <p id="productDeveloper">Insomniac</p></li>
+                            <li>
+                                <strong id="productTags">Exclusivos / Super-Heróis / Mundo aberto / luta</strong>
+                            </li>
                         </ul>
 
 

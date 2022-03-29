@@ -4,12 +4,13 @@
     width: 100vw;
     height: 100vh;
     padding: 0 4rem;
+    overflow: auto;
     color: white;
     background-color: black;
 }
 .moreInfoContent{
     background-color: #2e2e2e;
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px;
 
     .bi-heart, .bi-heart-fill{
@@ -33,7 +34,7 @@
 .ProductImage{
     width: 400px;
     height: 400px;
-    background-position: center;
+    background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../assets/gamesImages/spidermanGame.jpg);
@@ -77,6 +78,11 @@
     text-decoration: line-through;
     margin-bottom: 0;
 }
+.extraInfoList p{
+    display: contents;
+    margin-bottom: 0;
+}
+
 .suggestionSection{
     padding-top: 1rem;
 
@@ -90,8 +96,8 @@
     gap: 0;
 
     .suggestionCard{
-        width: 90px;
-        height: 100px; 
+        width: 100px;
+        height: 130px; 
         padding: 10px;
         border-radius: 6px;
         background: none;

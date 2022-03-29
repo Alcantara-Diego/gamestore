@@ -1,4 +1,9 @@
+import { useDispatch } from 'react-redux';
+import { updateDetails } from '../actions/detailsAction'
+
 function Highlights(props){
+
+    const dispatch = useDispatch();
 
     function itemAddedToCart(){
         let cartAlert = document.getElementsByClassName("alert")[0]
@@ -13,11 +18,12 @@ function Highlights(props){
     return(
         <section className="highlightsSection w-100">
 
+            {/* HORIZON FORBIDDEN WEST */}
             <div id="hilight1" className="highlight">
 
                 <div className="highlightActionButtons">
                     <h1 className="itemTitle">Horizon Forbidden West</h1>
-                    <button className="btn actionButton">Comprar!</button>
+                    <button onClick={() => dispatch(updateDetails("horizonfw"))} className="btn actionButton">Comprar!</button>
                     <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>
                     </button>
@@ -29,12 +35,14 @@ function Highlights(props){
                 </div>
 
             </div>
+
+            {/* GTA V */}
             <div id="hilight2" className="highlight">
 
 
                 <div className="highlightActionButtons">
                 <h1 className="itemTitle">Grand Theft Auto V</h1>
-                    <button className="btn actionButton">Comprar!</button>
+                    <button onClick={() => dispatch(updateDetails("gtav"))}  className="btn actionButton">Comprar!</button>
                     <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>
                     </button>
@@ -46,11 +54,13 @@ function Highlights(props){
                 </div>
 
             </div>
+
+            {/* RESIDENT EVILL VILLAGE */}
             <div id="hilight3" className="highlight">
 
                 <div className="highlightActionButtons">
                 <h1 className="itemTitle">Resident Evil Village</h1>
-                    <button className="btn actionButton">Comprar!</button>
+                    <button onClick={() => dispatch(updateDetails("revillage"))}  className="btn actionButton">Comprar!</button>
                     <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>
                     </button>
@@ -62,11 +72,13 @@ function Highlights(props){
                 </div>
 
             </div>
+
+            {/* GOD OF WAR */}
             <div id="hilight4" className="highlight">
 
                 <div className="highlightActionButtons">
                 <h1 className="itemTitle">God of war</h1>
-                    <button className="btn actionButton">Comprar!</button>
+                    <button onClick={() => dispatch(updateDetails("gow"))} className="btn actionButton">Comprar!</button>
                     <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>
                     </button>

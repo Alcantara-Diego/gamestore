@@ -1,42 +1,27 @@
 import { Routes, Route} from 'react-router-dom'
 import './style/style.css'
+
 import Store from './Components/Store'
 import MoreInfoDiv from './Components/MoreInfoDiv'
 
-import tlowGame from './assets/gamesImages/tlowGame.jpg'
-import milesmorales from './assets/gamesImages/milesmoralesGame.jpg'
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+
+import detailsReducer from './reducers/detailsReducer'
+
+const store = createStore(detailsReducer);
 
 function App() {
 
-  function updateDetailsPage(code){
-    console.log("working")
-
-    setTimeout(()=>{
-      let name = document.getElementById("productName");
-      let price = document.getElementById("productPrice");
-      let image = document.getElementById("productImageId");
-      switch (code){
-        case "milesmorales":
-          name.innerHTML= "Spider-Man Miles Morales";
-          price.innerHTML= "R$420,00";
-          console.log(image)
-          image.style.backgroundImage=`url(${milesmorales})`
-          break
-
-        default:
-          console.log("error");
-      }
-    }, 1000);
-    
-  }
   return (
     <div className="App">
 
-      <Routes>
-        {/* <Route updateDetailsPage={updateDetailsPage} path="/" element={ <Store/>}/> */}
-        <Route path="/" element={<Store updateDetailsPage = {updateDetailsPage} />} />
-        <Route path="detalhes" element={<MoreInfoDiv/>}/>
-      </Routes>
+      <Provider store={store}>
+        <Routes>
+            <Route path="/" element={<Store/>} />
+            <Route path="detalhes" element={<MoreInfoDiv/>}/>
+        </Routes>
+      </Provider>
     </div>
   );
 }

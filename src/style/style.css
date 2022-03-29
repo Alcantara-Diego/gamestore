@@ -217,7 +217,8 @@
 }
 
 .cardsContainer .card .imgContainer img {
-  width: 100%;
+  display: block;
+  margin: auto;
   height: 225px;
 }
 
@@ -303,6 +304,7 @@
     height: 170px;
   }
   .newArrivals .cardsContainer .card .imgContainer img, .discountSection .cardsContainer .card .imgContainer img {
+    width: 100%;
     height: 170px;
   }
   .newArrivals .cardsContainer .card .itemTitleInSimpleCard, .discountSection .cardsContainer .card .itemTitleInSimpleCard {
@@ -465,7 +467,7 @@
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: item1;
-  background-image: url(../assets/extraImages/ControlePS5.png);
+  background-image: url(../assets/extraImages/dualsense.png);
 }
 
 .consolesContainerGrid .card:nth-of-type(3) {
@@ -1045,13 +1047,14 @@ nav {
   width: 100vw;
   height: 100vh;
   padding: 0 4rem;
+  overflow: auto;
   color: white;
   background-color: black;
 }
 
 .moreInfoContent {
   background-color: #2e2e2e;
-  height: 100vh;
+  min-height: 100vh;
   padding: 20px;
 }
 
@@ -1082,7 +1085,7 @@ nav {
 .ProductImage {
   width: 400px;
   height: 400px;
-  background-position: center;
+  background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(../assets/gamesImages/spidermanGame.jpg);
@@ -1132,6 +1135,11 @@ nav {
   margin-bottom: 0;
 }
 
+.extraInfoList p {
+  display: contents;
+  margin-bottom: 0;
+}
+
 .suggestionSection {
   padding-top: 1rem;
 }
@@ -1147,8 +1155,8 @@ nav {
 }
 
 .suggestionCardsContainer .suggestionCard {
-  width: 90px;
-  height: 100px;
+  width: 100px;
+  height: 130px;
   padding: 10px;
   border-radius: 6px;
   background: none;
