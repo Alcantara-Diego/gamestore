@@ -4,12 +4,61 @@ import codBo4Game from '../assets/gamesImages/codBo4Game.jpg'
 import redDeadGame from '../assets/gamesImages/redDeadGame.jpg'
 import mk11Game from '../assets/gamesImages/mk11Game.jpg'
 
-import { useDispatch } from 'react-redux';
-import { updateDetails } from '../actions/detailsAction'
+import library from './productsInfo'
 
-function NewArrivals(){
-    
+import { useDispatch } from 'react-redux';
+import { updateDetails, addToCart } from '../actions/productsInfoAction'
+
+function NewArrivals(props){
+
     const dispatch = useDispatch();
+
+    function updatePaymentValue(code){
+        console.log("----------")
+        let productPrice;
+        
+        library.map(obj => {
+            if(obj.code === code){
+                productPrice = obj.price;
+                console.log(productPrice);
+            }
+        });
+
+        let cartPaymentValueElement = document.getElementById("cartPaymentValue");
+        let actualTotalPrice = cartPaymentValueElement.innerHTML;
+
+        let newTotal = translateAndCalcuteValues(actualTotalPrice, productPrice);
+
+        cartPaymentValueElement.innerHTML=newTotal;
+    }
+
+    function translateAndCalcuteValues(firstNumber, secondNumber){
+        firstNumber = Number(firstNumber.replace(",", ".")).toFixed(2);
+        secondNumber = Number(secondNumber.replace(",", ".")).toFixed(2);
+
+        const total = (Number(firstNumber) + Number(secondNumber)).toFixed(2);
+
+        return total;
+        
+    }
+
+    function detectClickedArea(code){
+        // Detect the class of the element that was clicked
+        let e = window.event;
+        let itemClickedClass = e.target.className;
+        console.log(itemClickedClass)
+
+        // If the user clicked in the cart button, the product is added to the cart.
+        if(itemClickedClass === "bi bi-cart2" || itemClickedClass === "addToCartMiniBtn"){
+            dispatch(addToCart(code));
+            // updatePaymentValue(code);
+            props.toggleCart();
+
+
+        } else{  // If the user did not click in the cart button, he is redirected to the product details. 
+            dispatch(updateDetails(code));
+        }
+    }
 
     return (
         <div className="newArrivals">
@@ -18,7 +67,7 @@ function NewArrivals(){
             <div className="cardsContainer">
 
                 {/* THE LAST OF US 2 */}
-                <div onClick={() => dispatch(updateDetails("tlou2"))}  className="card simpleCard">
+                <div onClick={() => detectClickedArea("tlou2")}  className="card simpleCard">
                     <div className="imgContainer">
                         <img src={tlou2Game}  alt="."></img>
                     </div>
@@ -40,7 +89,7 @@ function NewArrivals(){
                             
                             <p className="price">R$249.90</p>
                             
-                            <button>
+                            <button className="addToCartMiniBtn">
                                 <i className="bi bi-cart2"></i>
                             </button>
                         </div>
@@ -50,7 +99,7 @@ function NewArrivals(){
 
 
                 {/* RED DEAD REDEMPTION 2 */}
-                <div onClick={() => dispatch(updateDetails("rdr2"))} className="card simpleCard">
+                <div onClick={() => detectClickedArea("rdr2")} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={redDeadGame}  alt="."></img>
                     </div>
@@ -70,7 +119,7 @@ function NewArrivals(){
 
                         <div className="simpleCardBottomInfo">
                             <p className="price">R$279.99</p>
-                            <button>
+                            <button className="addToCartMiniBtn">
                                 <i className="bi bi-cart2"></i>
                             </button>
                         </div>
@@ -80,7 +129,7 @@ function NewArrivals(){
 
 
                 {/* BATMAN ARKHAM KNIGHT */}
-                <div onClick={() => dispatch(updateDetails("batmanak"))} className="card simpleCard">
+                <div onClick={() => detectClickedArea("batmanak")} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={batmanGame}  alt="."></img>
                     </div>
@@ -105,7 +154,7 @@ function NewArrivals(){
                                 <p className="discount">R$160,00</p>
                                 <p className="price">R$109.99</p>
                             </div>
-                            <button>
+                            <button className="addToCartMiniBtn">
                                 <i className="bi bi-cart2"></i>
                             </button>
                         </div>
@@ -114,7 +163,7 @@ function NewArrivals(){
                 </div>
 
                 {/* MK11 */}
-                <div onClick={() => dispatch(updateDetails("mk11"))} className="card simpleCard">
+                <div onClick={() => detectClickedArea("mk11")} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={mk11Game}  alt="."></img>
                     </div>
@@ -134,7 +183,7 @@ function NewArrivals(){
 
                         <div className="simpleCardBottomInfo">
                             <p className="price">R$149.99</p>
-                            <button>
+                            <button className="addToCartMiniBtn">
                                 <i className="bi bi-cart2"></i>
                             </button>
                         </div>
@@ -143,7 +192,7 @@ function NewArrivals(){
                 </div>
 
                 {/* COD BO4 */}
-                <div onClick={() => dispatch(updateDetails("codbo4"))} className="card simpleCard">
+                <div onClick={() => detectClickedArea("codbo4")} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={codBo4Game}  alt="."></img>
                     </div>
@@ -168,7 +217,7 @@ function NewArrivals(){
                                 <p className="discount">R$250,00</p>
                                 <p className="price">R$129.99</p>
                             </div>
-                            <button>
+                            <button className="addToCartMiniBtn">
                                 <i className="bi bi-cart2"></i>
                             </button>
                         </div>

@@ -201,6 +201,13 @@
 
 
 // ---------- FIRST ROW OF GAMES SECTION -----------
+.addToCartMiniBtn{
+    transition: .300s;
+    &:hover{
+        color: orange!important;
+    }
+    
+}
 .cardsContainer{
     width: 100%;
     display: flex;
@@ -272,7 +279,7 @@
     
                 }
 
-                button{
+                .addToCartMiniBtn{
                     background: none;
                     border: none;
                     color: white;
@@ -538,6 +545,10 @@
         }
         &:nth-of-type(5)::before{
             @include discountBadge("-75%");
+        }
+
+        .addToCartMiniBtn:hover{
+            color: black!important
         }
         
     }

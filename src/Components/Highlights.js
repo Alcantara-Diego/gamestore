@@ -1,20 +1,10 @@
 import { useDispatch } from 'react-redux';
-import { updateDetails } from '../actions/detailsAction'
+import { updateDetails } from '../actions/productsInfoAction'
 
 function Highlights(props){
 
     const dispatch = useDispatch();
-
-    function itemAddedToCart(){
-        let cartAlert = document.getElementsByClassName("alert")[0]
-        
-        cartAlert.style.animation="showAlert 4s";
-        props.toggleCart();
-
-        setTimeout( ()=>{
-            cartAlert.style.animation="none";
-        }, 4000);
-    }
+    
     return(
         <section className="highlightsSection w-100">
 
@@ -24,7 +14,7 @@ function Highlights(props){
                 <div className="highlightActionButtons">
                     <h1 className="itemTitle">Horizon Forbidden West</h1>
                     <button onClick={() => dispatch(updateDetails("horizonfw"))} className="btn actionButton">Comprar!</button>
-                    <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
+                    <button className="btn actionButton" onClick={() => {props.itemAddedToCart("horizonfw")}}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>
                     </button>
                 </div>
@@ -43,7 +33,7 @@ function Highlights(props){
                 <div className="highlightActionButtons">
                 <h1 className="itemTitle">Grand Theft Auto V</h1>
                     <button onClick={() => dispatch(updateDetails("gtav"))}  className="btn actionButton">Comprar!</button>
-                    <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
+                    <button className="btn actionButton" onClick={() => {props.itemAddedToCart("gtav")}}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>
                     </button>
                 </div>
@@ -61,7 +51,7 @@ function Highlights(props){
                 <div className="highlightActionButtons">
                 <h1 className="itemTitle">Resident Evil Village</h1>
                     <button onClick={() => dispatch(updateDetails("revillage"))}  className="btn actionButton">Comprar!</button>
-                    <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
+                    <button className="btn actionButton" onClick={() => {props.itemAddedToCart("revillage")}}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>
                     </button>
                 </div>
@@ -79,7 +69,7 @@ function Highlights(props){
                 <div className="highlightActionButtons">
                 <h1 className="itemTitle">God of war</h1>
                     <button onClick={() => dispatch(updateDetails("gow"))} className="btn actionButton">Comprar!</button>
-                    <button className="btn actionButton" onClick={itemAddedToCart}>Adicionar ao carrinho
+                    <button className="btn actionButton" onClick={() => {props.itemAddedToCart("gow")}}>Adicionar ao carrinho
                     <i className="bi bi-cart-fill"></i>
                     </button>
                 </div>

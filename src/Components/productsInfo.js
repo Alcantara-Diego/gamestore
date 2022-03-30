@@ -25,7 +25,7 @@ const library = [
     {
         code: "milesmorales",
         name: "Spider-Man Miles Morales",
-        price: "R$420,00",
+        price: "420,00",
         img: milesmoralesGame,
         platform: "PS5",
         tags: "Exclusivos / Super-Heróis / Mundo aberto / luta",
@@ -34,7 +34,7 @@ const library = [
     {
         code: "horizonfw",
         name: "Horizon Forbbiden West",
-        price: "R$279,90",
+        price: "279,90",
         img: horizonfwGame,
         platform: "PS4",
         tags: "Exclusivos / Mundo aberto / Histórias envolventes",
@@ -43,7 +43,7 @@ const library = [
     {
         code: "gow",
         name: "God Of War",
-        price: "R$99,99",
+        price: "99,99",
         img: gowGame,
         platform: "PS4",
         tags: "Exclusivos / Mundo aberto / Histórias envolventes",
@@ -52,7 +52,7 @@ const library = [
     {
         code: "tlou2",
         name: "The last of us part 2",
-        price: "R$249,90",
+        price: "249,90",
         img: tlou2Game,
         platform: "PS4",
         tags: "Exclusivos / Violentos / Histórias envolventes",
@@ -61,7 +61,7 @@ const library = [
     {
         code: "rdr2",
         name: "Red dead redemption 2",
-        price: "R$279,97",
+        price: "279,99",
         img: redDeadGame,
         platform: "PS4",
         tags: "Mundo aberto / Histórias envolventes",
@@ -70,7 +70,7 @@ const library = [
     {
         code: "mk11",
         name: "Mortal Kombat 11",
-        price: "R$149,99",
+        price: "149,99",
         img: mk11Game,
         platform: "Xbox One",
         tags: "Luta",
@@ -79,7 +79,7 @@ const library = [
     {
         code: "batmanak",
         name: "Batman Arkham Knight",
-        price: "R$109,99",
+        price: "109,99",
         img: batmanGame,
         platform: "Xbox One",
         tags: "Super-Heróis / Mundo aberto / luta / Histórias envolventes",
@@ -88,7 +88,7 @@ const library = [
     {
         code: "codbo4",
         name: "Call Of Duty Black Ops 4",
-        price: "R$129,99",
+        price: "129,99",
         img: codBo4Game,
         platform: "PS4",
         tags: "FPS / Foco multiplayer",
@@ -97,7 +97,7 @@ const library = [
     {
         code: "mine",
         name: "Minecraft",
-        price: "R$99,00",
+        price: "99,00",
         img: minecraftGame,
         platform: "PS4",
         tags: "Exploração / Toda família",
@@ -106,7 +106,7 @@ const library = [
     {
         code: "revillage",
         name: "Resident Evill Village",
-        price: "R$209,90",
+        price: "209,90",
         img: revillageGame,
         platform: "Xbox One",
         tags: "Terror / FPS / Histórias envolventes",
@@ -115,7 +115,7 @@ const library = [
     {
         code: "spiderman",
         name: "Spider-Man PS4",
-        price: "R$161,00",
+        price: "161,00",
         img: spidermanGame,
         platform: "PS4",
         tags: "Exclusivos / Super-Heróis / Mundo aberto / luta",
@@ -124,7 +124,7 @@ const library = [
     {
         code: "gtav",
         name: "Grand Theft Auto V",
-        price: "R$117,50",
+        price: "117,50",
         img: gtaGame,
         platform: "Xbox One",
         tags: "Mundo aberto / Histórias envolventes",
@@ -133,7 +133,7 @@ const library = [
     {
         code: "2077",
         name: "CyberPunk2077",
-        price: "R$69,90",
+        price: "69,90",
         img: cyberpunkGame,
         platform: "PS4",
         tags: "Mundo aberto / FPS",
@@ -145,7 +145,7 @@ const library = [
     {
         code: "ps5",
         name: "Playstation 5",
-        price: "R$4,699,99",
+        price: "4,699,99",
         img: PS5Preto,
         platform: "PS5",
         tags: "Consoles / Acessórios",
@@ -154,7 +154,7 @@ const library = [
     {
         code: "ps4pro",
         name: "Playstation 4 Pro",
-        price: "R$3,189,90",
+        price: "3,189,90",
         img: PS4Pro,
         platform: "PS4",
         tags: "Consoles / Acessórios",
@@ -163,7 +163,7 @@ const library = [
     {
         code: "dualsense",
         name: "Dualsense",
-        price: "R$429,90",
+        price: "429,90",
         img: dualsense,
         platform: "PS5",
         tags: "Consoles / Acessórios",
@@ -172,7 +172,7 @@ const library = [
     {
         code: "headset",
         name: "Playstation Headset",
-        price: "R$149,90",
+        price: "149,90",
         img: headset,
         platform: "PS4",
         tags: "Consoles / Acessórios",
@@ -181,7 +181,7 @@ const library = [
     {
         code: "seriesx",
         name: "Xbox Series X",
-        price: "R$4,499,99",
+        price: "4,499,99",
         img: xboxSX,
         platform: "Xbox Series X",
         tags: "Consoles / Acessórios",

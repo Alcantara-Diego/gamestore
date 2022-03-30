@@ -7,7 +7,7 @@ import MoreInfoDiv from './Components/MoreInfoDiv'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
-import detailsReducer from './reducers/detailsReducer'
+import detailsReducer from './reducers/productsInfoReducer'
 
 const store = createStore(detailsReducer);
 

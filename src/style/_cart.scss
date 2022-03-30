@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    right: -350px;
+    right: -380px;
     padding: 10px;
     width: 350px;
 
@@ -13,6 +13,26 @@
     border: 1px solid gainsboro;
     transition: .800s;
     z-index: 10;
+
+    .actionBtn{
+        font-size: .9rem;
+        font-weight: bold;
+        transition: .300ms;
+        cursor: pointer;
+
+        &:hover{
+            color: black;
+            border: 2px solid black;
+        }
+    }
+
+    .cleanListBtn{
+        padding: 0px 20px;
+        border-radius: 20px;
+        height: 29px;
+        margin-bottom: 3px;
+        
+    }
 
     #closeCart{
         display: block!important;
@@ -23,24 +43,82 @@
     .cartPaymentDiv{
         position: absolute;
         bottom: 0;
+        height: var(--cartPaymentDivHeight);
         // this margin has to be the same as the padding value in the parent element
         margin: -10px;
         border-top: 1px solid gainsboro;
 
         #buyBtnCart{
+            border-radius: 15px;
             padding: 0px 45px;
-            border-radius: 10px;
             height: 42px;
-            font-size: .9rem;
-            font-weight: bold;
-            background-color: #d4d3d3;
-            cursor: pointer;
+            background-image: var(--mainImage);
+            color: white;
+            
+            &:hover{
+                color: black;
+                border: 2px solid black;
+            }
         }
     }
 }
 
 .showCart{
     right: 0px;
+}
+
+
+.cartList{
+    height: calc(88vh - var(--cartPaymentDivHeight));
+    list-style: none;
+    padding: 0px;
+    overflow: auto;
+}
+.cartItem{
+    margin: 10px 0;
+    flex-direction: row;
+    // border-bottom: 1px solid gainsboro;
+
+    p{
+        margin-bottom: 0;
+    }
+
+    .cartItemImgContainer{
+        width: 100px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .cartItemContent{
+        width: 60%;
+        padding: 5px;
+    }
+
+    .cartItemTitle{
+        margin: 0;
+    }
+    .cartItemPrice{
+        color: white;
+        font-weight: bold;
+    }
+
+    .cartItemPlatform{
+        color: white;
+        font-weight: bold;
+
+        strong{
+            color: gainsboro;
+            font-weight: bold;
+        }
+    }
+
+    .cartItemSavedBadge{
+        color: white;
+        background: none;
+        border: none;
+    }
 }
 
 @media screen and (max-width: 375px){

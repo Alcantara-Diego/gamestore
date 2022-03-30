@@ -5,12 +5,29 @@ import gtaGame from '../assets/gamesImages/gtaGame.jpeg';
 import cyberpunkGame from '../assets/gamesImages/cyberpunkGame.jpg';
 
 import { useDispatch } from 'react-redux';
-import { updateDetails } from '../actions/detailsAction'
+import { updateDetails, addToCart } from '../actions/productsInfoAction'
 
 
-function DiscountSection(){
+function DiscountSection(props){
 
     const dispatch = useDispatch();
+
+    function detectClickedArea(code){
+        // Detect the class of the element that was clicked
+        let e = window.event;
+        let itemClickedClass = e.target.className;
+        console.log(itemClickedClass)
+
+        // If the user clicked in the cart button, the product is added to the cart.
+        if(itemClickedClass === "bi bi-cart2" || itemClickedClass === "addToCartMiniBtn"){
+            dispatch(addToCart(code));
+            props.toggleCart();
+
+
+        } else{  // If the user did not click in the cart button, he is redirected to the product details. 
+            dispatch(updateDetails(code));
+        }
+    }
 
     return(
         <section className="section discountSection">
@@ -20,7 +37,7 @@ function DiscountSection(){
             <div className="cardsContainer">
 
                 {/* SPIDERMAN */}
-                <div onClick={() => dispatch(updateDetails("spiderman"))} className="card simpleCard">
+                <div onClick={() => detectClickedArea("spiderman")} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={spidermanGame}  alt="."></img>
                     </div>
@@ -45,7 +62,7 @@ function DiscountSection(){
                                 <p className="price">R$161.00</p>
                             </div>
                             
-                            <button>
+                            <button className="addToCartMiniBtn">
                                 <i className="bi bi-cart2"></i>
                             </button>
                         </div>
@@ -54,7 +71,7 @@ function DiscountSection(){
                 </div>
 
                 {/* RESIDENT EVIL VILLAGE */}
-                <div onClick={() => dispatch(updateDetails("revillage"))} className="card simpleCard">
+                <div onClick={() => detectClickedArea("revillage")} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={revillageGame}  alt="."></img>
                     </div>
@@ -79,7 +96,7 @@ function DiscountSection(){
                                 <p className="price">R$209.90</p>
                             </div>
                             
-                            <button>
+                            <button className="addToCartMiniBtn">
                                 <i className="bi bi-cart2"></i>
                             </button>
                         </div>
@@ -89,7 +106,7 @@ function DiscountSection(){
 
 
                 {/* MINECRAFT */}
-                <div onClick={() => dispatch(updateDetails("mine"))} className="card simpleCard">
+                <div onClick={() => detectClickedArea("mine")} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={minecraftGame}  alt="."></img>
                     </div>
@@ -112,7 +129,7 @@ function DiscountSection(){
                                 <p className="discount">R$110,00</p>
                                 <p className="price">R$99.00</p>
                             </div>
-                            <button>
+                            <button className="addToCartMiniBtn">
                                 <i className="bi bi-cart2"></i>
                             </button>
                         </div>
@@ -120,8 +137,8 @@ function DiscountSection(){
                     </div>
                 </div>
 
-                {/* GTA */}
-                <div onClick={() => dispatch(updateDetails("gtav"))} className="card simpleCard">
+                {/* GTA V */}
+                <div onClick={() => detectClickedArea("gtav")} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={gtaGame}  alt="."></img>
                     </div>
@@ -146,7 +163,7 @@ function DiscountSection(){
                                 <p className="discount">R$196,00</p>
                                 <p className="price">R$117.50</p>
                             </div>
-                            <button>
+                            <button className="addToCartMiniBtn">
                                 <i className="bi bi-cart2"></i>
                             </button>
                         </div>
@@ -156,7 +173,7 @@ function DiscountSection(){
 
 
                 {/* CYBERPUNK 2077 */}
-                <div onClick={() => dispatch(updateDetails("2077"))} className="card simpleCard">
+                <div onClick={() => detectClickedArea("2077")} className="card simpleCard">
                     <div className="imgContainer">
                         <img src={cyberpunkGame}  alt="."></img>
                     </div>
@@ -181,7 +198,7 @@ function DiscountSection(){
                                 <p className="discount">R$280,00</p>
                                 <p className="price">R$69.90</p>
                             </div>
-                            <button>
+                            <button className="addToCartMiniBtn">
                                 <i className="bi bi-cart2"></i>
                             </button>
                         </div>

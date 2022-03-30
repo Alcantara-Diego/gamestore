@@ -2,7 +2,7 @@ import batmanGame from '../assets/gamesImages/batmanGame.jpg'
 import tlou2Game from '../assets/gamesImages/tlou2Game.png'
 
 import { useDispatch } from 'react-redux';
-import { updateDetails } from '../actions/detailsAction'
+import { updateDetails } from '../actions/productsInfoAction'
 
 function SuggestionSection(){
 

@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { updateDetails } from '../actions/detailsAction'
+import { updateDetails } from '../actions/productsInfoAction'
 
 function HeroSection(){
 

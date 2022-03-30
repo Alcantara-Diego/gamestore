@@ -4,8 +4,8 @@ import NewArrivals from './NewArrivals';
 function FirstSection(props){
     return (
         <div className="section firstSection">
-            <Highlights toggleCart={props.toggleCart}/>
-            <NewArrivals/>
+            <Highlights itemAddedToCart={props.itemAddedToCart} toggleCart={props.toggleCart}/>
+            <NewArrivals toggleCart={props.toggleCart}/>
         </div>
     )
 }
