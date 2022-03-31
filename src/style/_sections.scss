@@ -33,7 +33,7 @@
     @include flexCenter();
     opacity: 1;
     overflow: hidden;
-    z-index: 100;
+    z-index: 5;
 
     &:before{
         content: 'Mais vendido!';

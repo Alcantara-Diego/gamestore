@@ -7,7 +7,7 @@ import DiscountSection from './DiscountSection';
 import Footer from './Footer';
 
 import { useDispatch } from 'react-redux';
-import { updateDetails, addToCart } from '../actions/productsInfoAction'
+import { addToCart } from '../actions/productsInfoAction'
 
 function Store(props){
 

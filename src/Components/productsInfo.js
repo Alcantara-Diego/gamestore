@@ -145,7 +145,7 @@ const library = [
     {
         code: "ps5",
         name: "Playstation 5",
-        price: "4,699,99",
+        price: "4699,99",
         img: PS5Preto,
         platform: "PS5",
         tags: "Consoles / Acessórios",
@@ -154,7 +154,7 @@ const library = [
     {
         code: "ps4pro",
         name: "Playstation 4 Pro",
-        price: "3,189,90",
+        price: "3189,90",
         img: PS4Pro,
         platform: "PS4",
         tags: "Consoles / Acessórios",
@@ -181,7 +181,7 @@ const library = [
     {
         code: "seriesx",
         name: "Xbox Series X",
-        price: "4,499,99",
+        price: "4499,99",
         img: xboxSX,
         platform: "Xbox Series X",
         tags: "Consoles / Acessórios",

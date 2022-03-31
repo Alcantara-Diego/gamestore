@@ -4,43 +4,12 @@ import codBo4Game from '../assets/gamesImages/codBo4Game.jpg'
 import redDeadGame from '../assets/gamesImages/redDeadGame.jpg'
 import mk11Game from '../assets/gamesImages/mk11Game.jpg'
 
-import library from './productsInfo'
-
 import { useDispatch } from 'react-redux';
 import { updateDetails, addToCart } from '../actions/productsInfoAction'
 
 function NewArrivals(props){
 
     const dispatch = useDispatch();
-
-    function updatePaymentValue(code){
-        console.log("----------")
-        let productPrice;
-        
-        library.map(obj => {
-            if(obj.code === code){
-                productPrice = obj.price;
-                console.log(productPrice);
-            }
-        });
-
-        let cartPaymentValueElement = document.getElementById("cartPaymentValue");
-        let actualTotalPrice = cartPaymentValueElement.innerHTML;
-
-        let newTotal = translateAndCalcuteValues(actualTotalPrice, productPrice);
-
-        cartPaymentValueElement.innerHTML=newTotal;
-    }
-
-    function translateAndCalcuteValues(firstNumber, secondNumber){
-        firstNumber = Number(firstNumber.replace(",", ".")).toFixed(2);
-        secondNumber = Number(secondNumber.replace(",", ".")).toFixed(2);
-
-        const total = (Number(firstNumber) + Number(secondNumber)).toFixed(2);
-
-        return total;
-        
-    }
 
     function detectClickedArea(code){
         // Detect the class of the element that was clicked
@@ -51,7 +20,6 @@ function NewArrivals(props){
         // If the user clicked in the cart button, the product is added to the cart.
         if(itemClickedClass === "bi bi-cart2" || itemClickedClass === "addToCartMiniBtn"){
             dispatch(addToCart(code));
-            // updatePaymentValue(code);
             props.toggleCart();
 
 

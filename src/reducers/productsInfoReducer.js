@@ -6,11 +6,11 @@ export default  function detailsReducer (state = [], action) {
         case "UPDATE_DETAILS":
             const game = action.payload;
 
-            console.log("reducer acionado")
+            // Redirect the user to the details page
             window.location.hash="/detalhes"
 
+            // Fill the page with the information of the game after one second to load the page properly
             setTimeout(() => {
-
 
                 let name = document.getElementById("productName");
                 let price = document.getElementById("productPrice");
@@ -25,7 +25,6 @@ export default  function detailsReducer (state = [], action) {
                 developer.innerHTML=game.developer;
                 tags.innerHTML=game.tags;
                 image.style.backgroundImage = `url(${game.img})`;
-
 
             }, 1000);
 

@@ -4,12 +4,12 @@ import './style/style.css'
 import Store from './Components/Store'
 import MoreInfoDiv from './Components/MoreInfoDiv'
 
-import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
-import detailsReducer from './reducers/productsInfoReducer'
+import { createStore } from 'redux'
+import root from './reducers/root'
 
-const store = createStore(detailsReducer);
+const store = createStore(root);
 
 function App() {
 

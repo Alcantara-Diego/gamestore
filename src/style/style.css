@@ -433,7 +433,7 @@
           align-items: center;
   opacity: 1;
   overflow: hidden;
-  z-index: 100;
+  z-index: 5;
 }
 
 .consolesContainerGrid .card:first-of-type span:before {
