@@ -18,18 +18,16 @@ export default  function cartReducer (state = "00.00", action){
             // show the total in the cart
             return cartPaymentValueElement.innerHTML=newTotal;
 
-
-
-
-            function translateAndCalcuteValues(firstNumber, secondNumber){
-                firstNumber = Number(firstNumber.replaceAll(",", ".")).toFixed(2);
-                secondNumber = Number(secondNumber.replaceAll(",", ".")).toFixed(2);
-                        
-                const total = (Number(firstNumber) + Number(secondNumber));
-                return total.toFixed(2);
-            }
-
         default:
             return state
     }
+}
+
+
+function translateAndCalcuteValues(firstNumber, secondNumber){
+    firstNumber = Number(firstNumber.replaceAll(",", ".")).toFixed(2);
+    secondNumber = Number(secondNumber.replaceAll(",", ".")).toFixed(2);
+            
+    const total = (Number(firstNumber) + Number(secondNumber));
+    return total.toFixed(2);
 }
