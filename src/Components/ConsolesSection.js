@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { updateDetails, addToCart } from '../actions/productsInfoAction'
+import { updateDetails } from '../actions/productsInfoAction'
 
 function ConsolesSection(props){
 

@@ -1,5 +1,6 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux'
 import { updateDetails } from '../actions/productsInfoAction'
+import { scrollAnimation } from '../actions/animationAction'
 
 function HeroSection(){
 
@@ -16,11 +17,11 @@ function HeroSection(){
                 </div>
 
                 <div className="navigateBetweenSectionCards mt-5 d-flex flex-row justify-content-center">
-                    <div className="card"><i className="bi bi-star"></i> Destaques
+                    <div onClick={() => dispatch(scrollAnimation("highlightsSection"))} className="card"><i className="bi bi-star"></i> Destaques
                     </div>
-                    <div className="card"><i className="bi bi-controller"></i> Consoles
+                    <div onClick={() => dispatch(scrollAnimation("consolesSection"))}  className="card"><i className="bi bi-controller"></i> Consoles
                     </div>
-                    <div className="card"><i className="bi bi-cash-coin"></i> Ofertas
+                    <div onClick={() => dispatch(scrollAnimation("discountSection"))} className="card"><i className="bi bi-cash-coin"></i> Ofertas
                     </div>
                 </div>
             </div>

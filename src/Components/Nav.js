@@ -1,6 +1,8 @@
-
+import { useDispatch } from "react-redux"
+import { scrollAnimation } from "../actions/animationAction"
 
 function Nav(props){
+    const dispatch = useDispatch();
 
     function toggleNavInMobile(){
         document.querySelector(".contentSecondColumn").classList.toggle("hideNavOptions");
@@ -32,11 +34,11 @@ function Nav(props){
                 <div className="contentSecondColumn hideNavOptions justify-content-between">
                     <ul className="navOptions d-flex mb-0">
                         <button className="closeBtn" onClick={toggleNavInMobile}>&times;</button>
-                        <li className="navOption">Home</li>
+                        <li onClick={() => dispatch(scrollAnimation("heroSection"))} className="navOption">Home</li>
                     
-                        <li className="navOption">Consoles</li>
+                        <li onClick={() => dispatch(scrollAnimation("newArrivals"))} className="navOption">Novidades</li>
                     
-                        <li className="navOption">Jogos</li>
+                        <li onClick={() => dispatch(scrollAnimation("consolesSection"))} className="navOption">Consoles</li>
                     </ul>
 
                     <ul className="d-flex mb-0">
