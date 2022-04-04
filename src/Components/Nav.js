@@ -27,7 +27,7 @@ function Nav(props){
                         <button><i className="bi bi-twitter"></i></button>
                     </div>
 
-                    <div className="aditionalInfo"><p className="idioma mb-0">Idioma: <strong>BR<i className="mx-1 bi bi-caret-down-fill"></i></strong></p></div>
+                    <div className="aditionalInfo"><p className="idioma mb-0">Idioma: <strong>BR</strong></p></div>
                 </div>
 
                 {/* Options on second line */}

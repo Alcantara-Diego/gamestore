@@ -11,7 +11,7 @@ function MoreInfoDiv(){
                 <h3 className="moreInfoDivTitle mb-0">Mais detalhes!</h3>
                 <hr className=" mt-1 mb-4"></hr>
 
-                <button onClick={goBackHome} id='closeDetails' className="closeBtn" href='/gamestore'>&times;</button>
+                <button onClick={goBackHome} id="closeDetails" className="closeBtn" href='/gamestore'>&times;</button>
 
 
                 <section className="contentFirstSection itemDetailsDiv position-relative d-flex w-100">
@@ -34,12 +34,11 @@ function MoreInfoDiv(){
                             <i className="bi bi-heart"></i>
                         </div>
 
-                        <div className='PriceDiv'>
-                            <p id="productOldPrice" className="oldPrice">R$250.00</p>
+                        <div className='PriceDiv mb-3 mt-1'>
                             <h3 id="productPrice" className="Price">R$120,00</h3>
                         </div>
 
-                        <div className="mt-2">Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the gameHere comes a description of the game</div>
+                        <div id="productDescription" className="mt-2">Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the game Here comes a description of the gameHere comes a description of the game</div>
 
                         <ul className="extraInfoList p-0 mt-3">
                             <li>

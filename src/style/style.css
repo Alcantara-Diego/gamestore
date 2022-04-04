@@ -849,12 +849,16 @@ main .heroSectionContent .navigateBetweenSectionCards .card:hover {
 }
 
 nav {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border: 2px solid #2a2a2a;
   background-image: radial-gradient(#3b3b3b, #202020);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  z-index: 9;
 }
 
 .logo {
@@ -1223,10 +1227,8 @@ nav {
   color: green;
 }
 
-.oldPrice {
-  color: gainsboro;
-  text-decoration: line-through;
-  margin-bottom: 0;
+#productDescription {
+  font-size: 1.1rem;
 }
 
 .extraInfoList p {

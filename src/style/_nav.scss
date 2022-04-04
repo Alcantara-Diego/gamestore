@@ -1,10 +1,12 @@
 
 
 nav{
-    position: relative;
+    position: sticky;
+    top: 0;
+    border: 2px solid #2a2a2a;
     background-image: radial-gradient(#3b3b3b, #202020);
     user-select: none;
-
+    z-index: 9;
 }
 
 .logo{

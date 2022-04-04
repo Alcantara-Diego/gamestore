@@ -14,6 +14,7 @@ export default  function detailsReducer (state = [], action) {
 
                 let name = document.getElementById("productName");
                 let price = document.getElementById("productPrice");
+                let description = document.getElementById("productDescription");
                 let platform = document.getElementById("productPlatform");
                 let developer = document.getElementById("productDeveloper");
                 let tags = document.getElementById("productTags");
@@ -21,6 +22,7 @@ export default  function detailsReducer (state = [], action) {
 
                 name.innerHTML = game.name;
                 price.innerHTML = `R$${game.price}`;
+                description.innerHTML = game.description;
                 platform.innerHTML= game.platform;
                 developer.innerHTML=game.developer;
                 tags.innerHTML=game.tags;
