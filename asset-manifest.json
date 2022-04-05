@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gamestore/static/css/main.bb1f70d8.css",
-    "main.js": "/gamestore/static/js/main.b9fbfe55.js",
+    "main.js": "/gamestore/static/js/main.ebf05fe5.js",
     "static/js/787.f1f46333.chunk.js": "/gamestore/static/js/787.f1f46333.chunk.js",
     "static/media/gtaHighlight.jpeg": "/gamestore/static/media/gtaHighlight.4d0ca522a644d7c5f8ff.jpeg",
     "static/media/PS4Pro.png": "/gamestore/static/media/PS4Pro.d793c94d2313b880e8a7.png",
@@ -28,11 +28,11 @@
     "static/media/PS5Preto.jpg": "/gamestore/static/media/PS5Preto.bb07cd2abbe2b4e3d116.jpg",
     "index.html": "/gamestore/index.html",
     "main.bb1f70d8.css.map": "/gamestore/static/css/main.bb1f70d8.css.map",
-    "main.b9fbfe55.js.map": "/gamestore/static/js/main.b9fbfe55.js.map",
+    "main.ebf05fe5.js.map": "/gamestore/static/js/main.ebf05fe5.js.map",
     "787.f1f46333.chunk.js.map": "/gamestore/static/js/787.f1f46333.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb1f70d8.css",
-    "static/js/main.b9fbfe55.js"
+    "static/js/main.ebf05fe5.js"
   ]
 }
