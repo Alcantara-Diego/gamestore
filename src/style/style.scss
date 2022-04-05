@@ -85,17 +85,42 @@ footer{
     }
 
 }
+.loadScreen{
+    @include flexCenter();
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    display: none;
+    background-image: radial-gradient(#3b3b3b, #202020);
+    z-index: 1000;
+
+    h1{
+        color: gainsboro;
+        font-weight: bold;
+    }
+    h6{
+        color: gainsboro;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .spinner-border{
+        color: #ff884f;
+    }
+}
 
 
-
-
-
-
-
-
-
-
-
+::-webkit-scrollbar{
+    background-image: radial-gradient(#3b3b3b, #202020);
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: gainsboro;
+    
+    border-radius: 50px;
+}
 
 
 

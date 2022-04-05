@@ -3,7 +3,7 @@ import SuggestionSection from "./SuggestionSection";
 function MoreInfoDiv(){
 
     function goBackHome(){
-        window.location.hash="";
+        window.location.href="";
     }
     return(
         <div className="moreInfoContainer">

@@ -4,14 +4,23 @@ import HeroSection from './HeroSection';
 import FirstSection from './FirstSection';
 import ConsolesSection from './ConsolesSection';
 import DiscountSection from './DiscountSection';
+import LoadScreen from './LoadScreen';
 import Footer from './Footer';
 
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../actions/productsInfoAction'
+import { loadingAnimation } from '../actions/animationAction'
+import { useEffect } from 'react';
 
 function Store(props){
 
     const dispatch = useDispatch();
+
+    useEffect(()=>{
+        // Loading animation when render the component
+        dispatch(loadingAnimation());
+    });
+
 
     function itemAddedToCart(code){
 
@@ -26,6 +35,8 @@ function Store(props){
         }, 4000);
     }
 
+
+
     function toggleCart(state){
         if(state === "hide") document.querySelector(".cart").classList.remove("showCart");
         else document.querySelector(".cart").classList.add("showCart");
@@ -36,6 +47,7 @@ function Store(props){
 
     return(
         <div className="store">
+            <LoadScreen/>
             <div className="alert fw-bold">
                 <p className="m-0 d-inline mx-1">Item adicionado ao carrinho</p>  
                 <i className="bi bi-cart-fill"></i>
